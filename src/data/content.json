@@ -1,0 +1,470 @@
+{
+  "brand": "PraxisForge",
+  "brandSuffix": "AI",
+  "metadata": {
+    "title": "PraxisForge AI — Intelligence, with intention.",
+    "description": "A considered approach to AI operations. Explore specialist agents, human approvals, and verifiable outcomes in the PraxisForge AI design preview.",
+    "workspaceTitle": "Agency workspace demo",
+    "operationsTitle": "Private operations",
+    "principlesTitle": "Our principles"
+  },
+  "nav": [
+    {
+      "label": "Product",
+      "route": "product"
+    },
+    {
+      "label": "Pricing",
+      "route": "pricing"
+    },
+    {
+      "label": "Resources",
+      "route": "resources"
+    },
+    {
+      "label": "About",
+      "route": "about"
+    },
+    {
+      "label": "Contact",
+      "route": "contact"
+    }
+  ],
+  "ui": {
+    "openWorkspace": "Explore the workspace",
+    "seeWorkflow": "See it in motion",
+    "backHome": "Back to the platform",
+    "pauseMotion": "Pause motion",
+    "enableMotion": "Enable motion",
+    "menu": "Open navigation",
+    "closeMenu": "Close navigation",
+    "viewRun": "View run",
+    "resetDemo": "Reset demo",
+    "allTasks": "All tasks",
+    "needsApproval": "Needs approval",
+    "completed": "Completed",
+    "blocked": "Blocked",
+    "unknown": "Needs reconciliation",
+    "approve": "Approve in demo",
+    "reject": "Reject in demo",
+    "close": "Close",
+    "search": "Search tasks",
+    "evidence": "Evidence",
+    "activity": "Activity",
+    "overview": "Overview",
+    "connections": "Connections",
+    "knowledge": "Knowledge",
+    "agents": "Agents",
+    "workspace": "Workspace",
+    "demoNotice": "Design preview",
+    "selected": "Selected",
+    "noResults": "No tasks match your search.",
+    "clearSearch": "Clear search",
+    "receipt": "Execution receipt",
+    "reviewAction": "Review proposed action",
+    "newRequest": "Try another workflow",
+    "source": "Source",
+    "recipient": "Recipient",
+    "account": "Sending account",
+    "operation": "Operation",
+    "message": "Message",
+    "approval": "Approval",
+    "approvedNotice": "Demo approval recorded. The simulated receipt is ready; no email was sent.",
+    "rejectedNotice": "Proposal rejected in this demo. No email was sent.",
+    "resetNotice": "Demo restored to its original state.",
+    "simulateRequest": "Choose a sample request",
+    "reducedMotion": "Reduced motion is on",
+    "demoOnly": "Demo only",
+    "comingLater": "Planned capability",
+    "rejected": "Rejected",
+    "sourceUnavailable": "Source preview unavailable in this demo",
+    "mainNavigation": "Main navigation",
+    "mobileNavigation": "Mobile navigation",
+    "openConsole": "Owner console",
+    "footerNavigation": "Explore PraxisForge",
+    "copyEmail": "Copy email address",
+    "emailCopied": "Email address copied.",
+    "emailCopyFailed": "Please use the email link to open your mail app."
+  },
+  "hero": {
+    "eyebrow": "A NEW STANDARD FOR AI OPERATIONS",
+    "lineOne": "Intelligence,",
+    "lineTwo": "with intention.",
+    "description": "Give your work a capable team. Keep the decisions that matter.",
+    "detail": "Specialist agents, human judgment, and a clear trail from intent to outcome.",
+    "label": "HERMES-POWERED · SELF-HOSTED",
+    "caption": "Many minds. One considered system.",
+    "scroll": "SCROLL TO EXPLORE",
+    "preview": "The Agency Operations preview"
+  },
+  "intro": {
+    "eyebrow": "01 / THE OPERATING PRINCIPLE",
+    "title": "Let agents do the work.",
+    "italic": "Let people set the direction.",
+    "description": "There is a difference between an answer and an outcome. PraxisForge brings specialized agents, business context, and human approvals into one thoughtful workspace.",
+    "aside": "From the first source to the final receipt, every step should be understandable.",
+    "labels": [
+      "Purpose-built agents",
+      "Context that belongs to you",
+      "Human approval by design"
+    ]
+  },
+  "workflow": {
+    "eyebrow": "02 / FROM INTENT TO OUTCOME",
+    "title": "Your next week,",
+    "italic": "already in motion.",
+    "description": "One request. A coordinated team. A sequence you can follow, review, and trust.",
+    "request": "Review our client meetings, find the open commitments, and prepare thoughtful follow-ups.",
+    "requestBy": "You, setting the direction",
+    "note": "An illustrative agency workflow. Explore each step.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Understand the assignment",
+        "description": "The coordinator turns your intent into bounded tasks, with clear owners and a definition of success.",
+        "agent": "Orchestrator",
+        "status": "Plan prepared",
+        "heading": "A clear plan, before a single action.",
+        "items": [
+          "Review the meeting notes",
+          "Match commitments to client context",
+          "Prepare follow-ups for your review"
+        ],
+        "source": "Your request · Agency Operations"
+      },
+      {
+        "number": "02",
+        "title": "Find the right context",
+        "description": "The researcher brings together permitted knowledge, recent conversations, and the sources behind every recommendation.",
+        "agent": "Researcher",
+        "status": "Sources connected",
+        "heading": "Grounded in the work you actually do.",
+        "items": [
+          "Northstar · Discovery call notes",
+          "Client playbook · Follow-up guidance",
+          "Project board · Open commitments"
+        ],
+        "source": "3 illustrative sources · workspace-scoped"
+      },
+      {
+        "number": "03",
+        "title": "Keep the important decisions",
+        "description": "Review the exact message, recipient, and account. The proposed action stays a proposal until you approve it.",
+        "agent": "Operator",
+        "status": "Awaiting your approval",
+        "heading": "Ready to send. Waiting for you.",
+        "items": [
+          "To: Morgan at Northstar",
+          "From: Your client-success account",
+          "Subject: A thoughtful next step"
+        ],
+        "source": "Approval bound to this exact action"
+      },
+      {
+        "number": "04",
+        "title": "Close the loop with evidence",
+        "description": "A receipt records what the provider accepted. Uncertain outcomes stay visible and return for reconciliation.",
+        "agent": "Orchestrator",
+        "status": "Outcome accounted for",
+        "heading": "An outcome you can inspect.",
+        "items": [
+          "Message acceptance recorded",
+          "CRM commitment updated",
+          "Sources and action history retained"
+        ],
+        "source": "Simulated provider receipt · no email sent"
+      }
+    ]
+  },
+  "agentsSection": {
+    "eyebrow": "03 / A TEAM WITH PURPOSE",
+    "title": "Specialized minds.",
+    "italic": "Shared direction.",
+    "description": "The right agent for each responsibility. A deliberate handoff between them.",
+    "note": "Three specialist roles in the platform design. Explore their responsibilities."
+  },
+  "agents": [
+    {
+      "id": "coordinator",
+      "number": "01",
+      "name": "The Orchestrator",
+      "short": "Orchestrator",
+      "role": "THINKS IN SYSTEMS",
+      "description": "Makes a clear plan, coordinates the specialists, and accounts for every requested outcome.",
+      "abilities": [
+        "Task planning",
+        "Bounded delegation",
+        "Outcome verification"
+      ],
+      "symbol": "orbit"
+    },
+    {
+      "id": "researcher",
+      "number": "02",
+      "name": "The Researcher",
+      "short": "Researcher",
+      "role": "CONNECTS THE CONTEXT",
+      "description": "Finds the relevant knowledge, respects its boundaries, and brings the evidence into focus.",
+      "abilities": [
+        "Source discovery",
+        "Context assembly",
+        "Knowledge provenance"
+      ],
+      "symbol": "focus"
+    },
+    {
+      "id": "operator",
+      "number": "03",
+      "name": "The Operator",
+      "short": "Operator",
+      "role": "TURNS INTENT INTO ACTION",
+      "description": "Prepares useful work, asks for the right approval, and keeps execution tied to the exact request.",
+      "abilities": [
+        "Thoughtful drafting",
+        "Approval-bound actions",
+        "Execution receipts"
+      ],
+      "symbol": "rays"
+    }
+  ],
+  "workspaceSection": {
+    "eyebrow": "04 / ROOM TO DO GOOD WORK",
+    "title": "The whole picture.",
+    "italic": "Without the noise.",
+    "description": "Requests, specialist agents, approvals, and evidence. A calm place to see what needs you—and what is already in hand.",
+    "cta": "Step inside the demo",
+    "note": "A fully interactive frontend preview with synthetic client data."
+  },
+  "control": {
+    "eyebrow": "05 / CONSIDERED AT EVERY LAYER",
+    "title": "Capability needs",
+    "italic": "a sense of responsibility.",
+    "description": "The platform is being designed around clear boundaries. Useful autonomy should never come at the expense of understanding or control.",
+    "items": [
+      {
+        "number": "01",
+        "title": "Your context stays in context.",
+        "description": "Workspace-scoped knowledge and memory. Clear provenance. A deliberate separation between clients."
+      },
+      {
+        "number": "02",
+        "title": "An approval means something.",
+        "description": "The exact account, recipient, and content. If the proposed action changes, the approval should change too."
+      },
+      {
+        "number": "03",
+        "title": "A claim is not a receipt.",
+        "description": "Completed, blocked, failed, and uncertain are different outcomes. Each deserves its own honest record."
+      }
+    ]
+  },
+  "integrations": {
+    "eyebrow": "DESIGNED TO WORK WHERE YOU WORK",
+    "title": "Familiar tools. A more connected workflow.",
+    "note": "Initial connector targets. This frontend preview does not connect to your accounts.",
+    "items": ["Gmail", "Google Drive", "Telegram", "Twenty CRM"]
+  },
+  "closing": {
+    "eyebrow": "LESS FRICTION. MORE INTENTION.",
+    "lineOne": "Put intelligence",
+    "lineTwo": "to meaningful work.",
+    "description": "Start with a request. See where a considered system can take it.",
+    "cta": "Explore PraxisForge"
+  },
+  "footer": {
+    "description": "A Hermes-powered agent operations & engineering platform.",
+    "credit": "Independently built. Powered by Nous Research’s Hermes Agent.",
+    "status": "Public preview · 2026",
+    "copyright": "© 2026 PraxisForge AI",
+    "principles": "Design principles",
+    "hermes": "Meet Hermes",
+    "groups": [
+      {
+        "label": "Platform",
+        "links": [
+          {
+            "label": "Product",
+            "route": "product"
+          },
+          {
+            "label": "Features",
+            "route": "features"
+          },
+          {
+            "label": "Use cases",
+            "route": "use-cases"
+          },
+          {
+            "label": "Pricing",
+            "route": "pricing"
+          },
+          {
+            "label": "Interactive demo",
+            "route": "workspace"
+          }
+        ]
+      },
+      {
+        "label": "Explore",
+        "links": [
+          {
+            "label": "About",
+            "route": "about"
+          },
+          {
+            "label": "Documentation",
+            "route": "docs"
+          },
+          {
+            "label": "Resources",
+            "route": "resources"
+          },
+          {
+            "label": "Changelog",
+            "route": "changelog"
+          },
+          {
+            "label": "Status",
+            "route": "status"
+          }
+        ]
+      },
+      {
+        "label": "Trust",
+        "links": [
+          {
+            "label": "Security",
+            "route": "security"
+          },
+          {
+            "label": "Our principles",
+            "route": "principles"
+          },
+          {
+            "label": "Privacy",
+            "route": "privacy"
+          },
+          {
+            "label": "Terms",
+            "route": "terms"
+          },
+          {
+            "label": "Cookies",
+            "route": "cookies"
+          },
+          {
+            "label": "Accessibility",
+            "route": "accessibility"
+          }
+        ]
+      },
+      {
+        "label": "Connect",
+        "links": [
+          {
+            "label": "Contact",
+            "route": "contact"
+          },
+          {
+            "label": "Legal information",
+            "route": "legal"
+          },
+          {
+            "label": "Owner console",
+            "route": "operations"
+          }
+        ]
+      }
+    ]
+  },
+  "principles": {
+    "eyebrow": "THE PRAXISFORGE PRINCIPLES",
+    "title": "Ambitious systems.",
+    "italic": "Honest boundaries.",
+    "intro": "We are building toward useful AI operations with the discipline that consequential work deserves.",
+    "notice": "The public workspace uses synthetic data and simulated actions. The authenticated owner pilot adds durable knowledge, tasks and approvals; live CPU performance is still under review. External delivery and independent customer isolation remain future milestones.",
+    "items": [
+      {
+        "title": "Intention before execution",
+        "text": "A useful system starts with a clear task contract: who owns the work, what evidence is permitted, and what success looks like."
+      },
+      {
+        "title": "People own consequential decisions",
+        "text": "Messages, record changes, publication, deletion, and spending need deliberate authorization. Approval should bind the exact proposed action."
+      },
+      {
+        "title": "Context has a boundary",
+        "text": "Client knowledge, memory, credentials, and execution environments require enforced separation. A label in a prompt is not a security control."
+      },
+      {
+        "title": "Evidence over confidence",
+        "text": "A model saying it finished is not proof. Provider receipts, source-linked artifacts, and explicit uncertain outcomes make the work inspectable."
+      },
+      {
+        "title": "Improvement must be earned",
+        "text": "Prompts, skills, and models should improve against a measured baseline before promotion. Research belongs in an isolated lab."
+      },
+      {
+        "title": "Calm is a product feature",
+        "text": "Clear typography, accessible controls, restrained motion, and honest feedback make an operational interface easier to use when the work matters."
+      }
+    ]
+  },
+  "workspaceCopy": {
+    "greeting": "A little clarity for your day.",
+    "subtitle": "Your team is moving the work forward. Here is what needs your attention.",
+    "summary": [
+      "Tasks in view",
+      "Awaiting approval",
+      "Verified outcomes",
+      "Needs attention"
+    ],
+    "taskHeading": "The work, in motion",
+    "taskDescription": "A shared view of requests and the evidence behind them.",
+    "agentHeading": "Your specialist team",
+    "agentDescription": "Purposeful roles. Clear handoffs. Explore each agent’s focus.",
+    "knowledgeHeading": "A source for every next step",
+    "knowledgeDescription": "Illustrative workspace knowledge. Source previews are synthetic.",
+    "connectionsHeading": "The tools behind the work",
+    "connectionsDescription": "Connector design preview. No accounts are connected in this release.",
+    "approvalHint": "Review the exact proposed message below. This action affects only the synthetic demo.",
+    "recent": "Recent activity",
+    "sources": "Supporting sources",
+    "task": "Task",
+    "client": "Client",
+    "status": "Status",
+    "assigned": "Assigned to",
+    "viewSources": "Inspect sources",
+    "backToTasks": "Back to tasks",
+    "receiptBody": "This demo receipt illustrates the evidence an execution system should retain. No external provider was contacted.",
+    "receiptId": "SIMULATED-RECEIPT",
+    "emptyFilter": "There are no tasks in this view.",
+    "recorded": "Demo action recorded",
+    "newRequestHeading": "A useful place to start.",
+    "newRequestBody": "Choose a synthetic agency request to inspect its task, context, and proposed action."
+  },
+  "previewCopy": {
+    "overview": "Overview",
+    "tag": "SYNTHETIC DEMO",
+    "date": "THURSDAY, 15 OCTOBER",
+    "explore": "Explore demo",
+    "metrics": ["Tasks in view", "Needs your approval", "Verified outcomes"],
+    "details": [
+      "shared workspace",
+      "one considered decision",
+      "evidence attached"
+    ],
+    "allActivity": "All activity",
+    "note": "Every next step has a source. Every outcome has a record.",
+    "powered": "HERMES-POWERED",
+    "agency": "AGENCY OPERATIONS",
+    "example": "EXAMPLE WORKFLOW",
+    "you": "Y"
+  },
+  "notFound": {
+    "eyebrow": "404 / A DIFFERENT DIRECTION",
+    "lineOne": "Let’s find",
+    "lineTwo": "your way back.",
+    "back": "Back to PraxisForge"
+  }
+}

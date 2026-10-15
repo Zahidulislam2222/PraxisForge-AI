@@ -1,0 +1,8 @@
+{
+  "hermesRevision": "30463589eb54fa0f48724594cc0e98e6b995729b",
+  "archiveSha256": "23ebb3a3d521dc553cf5bb32aa00782dbbfd814272f842518333d499710d298f",
+  "pythonImage": "python@sha256:48b13b003dda20b16f9442b8475aa05fe21bf6579a8c881db92ffb4d8fd20f83",
+  "imageTag": "praxisforge-core:20261015-core-04",
+  "deploymentRelease": "20261015-core-05",
+  "dependencyPatch": "PyJWT2.15.1"
+}

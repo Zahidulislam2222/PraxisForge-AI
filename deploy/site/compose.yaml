@@ -1,0 +1,30 @@
+services:
+  web:
+    image: ${SITE_IMAGE:?Set cached pinned Nginx image}
+    pull_policy: never
+    entrypoint: ["nginx"]
+    command: ["-g", "daemon off;"]
+    user: "${SITE_UID:?Set nonroot user}:${SITE_GID:?Set nonroot group}"
+    restart: unless-stopped
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    pids_limit: ${SITE_PIDS_LIMIT:?Set process limit}
+    mem_limit: ${SITE_MEMORY_MIB:?Set memory limit}m
+    cpus: ${SITE_CPUS:?Set CPU quota}
+    ports: ["127.0.0.1:${SITE_PORT:?Set verified free port}:${SITE_CONTAINER_PORT:?Set Nginx port}"]
+    volumes:
+      - "${SITE_RELEASE_DIR:?Set sealed release path}/site:/usr/share/nginx/html:ro"
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./headers.conf:/etc/nginx/headers.conf:ro
+    tmpfs: ["${SITE_TEMP_PATH:?Set temporary directory}:rw,noexec,nosuid,size=${SITE_TMPFS_MIB:?Set temporary memory}m,uid=${SITE_UID:?Set nonroot user},gid=${SITE_GID:?Set nonroot group}"]
+    networks: [edge]
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://127.0.0.1:${SITE_CONTAINER_PORT:?Set Nginx port}/"]
+      interval: ${SITE_HEALTH_INTERVAL_SECONDS:?Set health interval}s
+      timeout: ${SITE_HEALTH_TIMEOUT_SECONDS:?Set health timeout}s
+      retries: ${SITE_HEALTH_RETRIES:?Set health retries}
+networks:
+  edge:
+    external: true
+    name: ${SITE_EXTERNAL_NETWORK:?Set existing core edge network}

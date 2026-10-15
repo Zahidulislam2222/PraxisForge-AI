@@ -1,0 +1,60 @@
+# Private recovery, project narrative, memory, and local tooling
+/CREDENTIALS.md
+/PROJECT-DOSSIER.md
+/memory/
+/.playwright-mcp/
+/backend/.venv/
+/backend/runtime/
+/tests/manual/
+/.venv-security/
+/.tools/
+/out/
+/playwright-report/
+/test-results/
+/.claude/
+/.codex/
+/.agents/
+/.aws/
+/AGENTS.md
+/CLAUDE.md
+
+# Secrets and private configuration; safe examples remain shareable
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.p12
+*.pfx
+/credentials/
+/secrets/
+/licenses/generated/
+
+# Dependencies, generated output, and caches (stack selected later)
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.next/
+.next-dev/
+*.tsbuildinfo
+dist/
+build/
+coverage/
+.coverage
+*.log
+.DS_Store
+Thumbs.db
+
+# Instance topology and local Google Docs/PDF recovery pointers
+/deploy/site/runtime.json
+/my-project-view/
+
+# Frozen private instance examples retained for deployed-image provenance
+/backend/.env.example
+/DEFECT-LOG.md

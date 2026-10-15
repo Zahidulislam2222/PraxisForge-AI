@@ -1,0 +1,1831 @@
+{
+  "pages": {
+    "product": {
+      "eyebrow": "The product",
+      "title": "From a request",
+      "accent": "to a record.",
+      "intro": "PraxisForge brings evidence, specialist agents and human review into one place. Follow the work from its first brief to an inspectable outcome.",
+      "sections": [
+        {
+          "id": "operating-loop",
+          "title": "One continuous thread.",
+          "layout": "steps",
+          "items": [
+            {
+              "title": "Give the work a clear brief",
+              "body": "Describe the client, the deliverable and the evidence the team may use. A request begins as a durable task, with its own history and an explicit outcome.",
+              "eyebrow": "01 / Intention",
+              "bullets": [
+                "A bounded request",
+                "Selected workspace evidence",
+                "An owner for the decision"
+              ]
+            },
+            {
+              "title": "Bring the right context",
+              "body": "Versioned text sources give the specialists something concrete to work from. Source references travel with the proposed draft so the reviewer can inspect its basis.",
+              "eyebrow": "02 / Evidence",
+              "bullets": [
+                "Text knowledge with provenance",
+                "Workspace-scoped selection",
+                "Missing context stays visible"
+              ]
+            },
+            {
+              "title": "Review the exact proposal",
+              "body": "Read the message, intended recipient, account and commitments together. Approval belongs to that specific action and its evidence; a changed proposal needs a new decision.",
+              "eyebrow": "03 / Judgment",
+              "bullets": [
+                "Inspect before approving",
+                "Reject or cancel deliberately",
+                "No implied permission to send"
+              ]
+            },
+            {
+              "title": "Keep an inspectable result",
+              "body": "The bounded core records an approved draft and internal commitments together, then produces a receipt. Download the resulting JSON artifact for your own review or handoff.",
+              "eyebrow": "04 / Outcome",
+              "bullets": [
+                "Internal draft artifact",
+                "Recorded commitments",
+                "Exportable receipt"
+              ]
+            }
+          ],
+          "intro": "A useful outcome needs more than a fluent answer. It needs context, a deliberate decision and a record of what actually happened."
+        },
+        {
+          "id": "three-specialists",
+          "title": "Distinct responsibilities. Shared context.",
+          "layout": "cards",
+          "items": [
+            {
+              "title": "The Orchestrator",
+              "body": "Turns the request into a bounded plan. It identifies the deliverable, the missing information and the work each specialist needs to do.",
+              "meta": "Planning and coordination"
+            },
+            {
+              "title": "The Researcher",
+              "body": "Checks the selected evidence for supported commitments and unresolved details. It brings source references into the handoff instead of treating confidence as evidence.",
+              "meta": "Evidence and provenance"
+            },
+            {
+              "title": "The Operator",
+              "body": "Prepares the proposed draft and commitments for review. In this bounded core, it has no tools for sending email, browsing accounts or administering systems.",
+              "meta": "Drafting and review"
+            }
+          ]
+        },
+        {
+          "id": "two-workspaces",
+          "title": "Choose how to explore.",
+          "layout": "rows",
+          "items": [
+            {
+              "title": "A public design preview",
+              "body": "The interactive workspace uses synthetic client records. Filters, task details and approval interactions demonstrate the experience; its actions are simulated.",
+              "status": "available",
+              "link": {
+                "label": "Open the synthetic workspace",
+                "route": "workspace"
+              }
+            },
+            {
+              "title": "An authenticated operations core",
+              "body": "The owner-operated core implements text knowledge, durable tasks, exact approvals and internal receipts. It is a bounded implementation under verification, with no public registration.",
+              "status": "limited",
+              "link": {
+                "label": "Open operations sign-in",
+                "route": "operations"
+              }
+            },
+            {
+              "title": "External tools, deliberately later",
+              "body": "Email delivery, connected drives, messaging and third-party CRM writes are planned connector work. Familiar tool names describe the direction, not an active account connection.",
+              "status": "planned",
+              "link": {
+                "label": "See capability boundaries",
+                "route": "features"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deliberate-scope",
+          "title": "Built for work you can inspect.",
+          "layout": "prose",
+          "items": [],
+          "paragraphs": [
+            "PraxisForge starts with one concrete agency workflow: turn meeting and procedure evidence into a thoughtful follow-up draft and a clear set of commitments. That focus makes it possible to test the handoffs, review the proposed changes and distinguish a completed internal action from a failed or blocked attempt.",
+            "The larger platform direction includes more connectors, richer retrieval and measured improvements to specialist behavior. Those capabilities belong on the roadmap until their permissions, failure handling and verification are implemented."
+          ]
+        }
+      ],
+      "cta": {
+        "eyebrow": "A considered next step",
+        "title": "See the operating principle at work.",
+        "text": "Explore a synthetic client request, its supporting context and the decision it asks you to make.",
+        "primary": {
+          "label": "Explore the workspace",
+          "route": "workspace"
+        },
+        "secondary": {
+          "label": "Read the guide",
+          "route": "docs"
+        }
+      },
+      "updated": "2026-10-15"
+    },
+    "features": {
+      "eyebrow": "Capabilities and boundaries",
+      "title": "Useful capability.",
+      "accent": "Visible limits.",
+      "intro": "Explore what the interface demonstrates, what the bounded core implements and where the product is heading.",
+      "sections": [
+        {
+          "id": "current-capabilities",
+          "title": "The foundations of considered operations.",
+          "layout": "cards",
+          "items": [
+            {
+              "title": "A calm operational workspace",
+              "body": "Inspect tasks, sources, agents and approval states through a focused interface. The public workspace makes the workflow explorable with synthetic records.",
+              "status": "available",
+              "link": {
+                "label": "Try the design preview",
+                "route": "workspace"
+              }
+            },
+            {
+              "title": "Versioned text knowledge",
+              "body": "The bounded core stores source text with versions and content hashes. Drafts reference the selected evidence so a reviewer can check what informed them.",
+              "status": "limited"
+            },
+            {
+              "title": "Durable task history",
+              "body": "Requests, attempts, stages and outcomes are recorded in the core. Failure and cancellation remain visible instead of disappearing behind an optimistic success message.",
+              "status": "limited"
+            },
+            {
+              "title": "Exact approval envelopes",
+              "body": "Approval binds the task, actor, workspace, account, recipient, draft, commitments, source hashes and expiry. The core rejects changes that no longer match the reviewed proposal.",
+              "status": "limited"
+            },
+            {
+              "title": "Internal commitments and receipts",
+              "body": "Approved internal work records its draft and commitments with a receipt. A downloaded JSON artifact retains the approved action and evidence references.",
+              "status": "limited"
+            },
+            {
+              "title": "Three specialist roles",
+              "body": "Coordinator, researcher and operator responsibilities run through a bounded Hermes integration. Inference uses a configured local model, with external tools disabled in this implementation.",
+              "status": "limited"
+            }
+          ],
+          "intro": "Available means you can explore it in the public preview. Limited means it exists in the owner-operated core and is not an unrestricted public service."
+        },
+        {
+          "id": "connector-roadmap",
+          "title": "Connections must earn their place.",
+          "layout": "rows",
+          "items": [
+            {
+              "title": "Email delivery",
+              "body": "Sending from a real mailbox will need scoped authorization, account selection, exact-message approval and a verifiable provider outcome. No external email is sent by the current core.",
+              "status": "planned",
+              "meta": "Mailbox connectors"
+            },
+            {
+              "title": "Connected document libraries",
+              "body": "Account-authorized file discovery and ingestion are future work. Current knowledge input is bounded text; a connected-drive logo is not evidence that files are being synchronized.",
+              "status": "planned",
+              "meta": "Drive and document connectors"
+            },
+            {
+              "title": "Messaging and CRM platforms",
+              "body": "Third-party channels and CRM writes remain separate integration milestones. Current commitments are internal platform records, not synchronized records in an external CRM.",
+              "status": "planned",
+              "meta": "External system connectors"
+            }
+          ]
+        },
+        {
+          "id": "further-direction",
+          "title": "A roadmap with verification gates.",
+          "layout": "cards",
+          "items": [
+            {
+              "title": "Richer knowledge retrieval",
+              "body": "Document formats, semantic retrieval and knowledge graphs need evaluation before they can extend the evidence boundary. Current source selection should remain understandable.",
+              "status": "planned"
+            },
+            {
+              "title": "Measured improvement",
+              "body": "Prompt, skill and model changes should beat a measured baseline before promotion. An isolated research environment is part of the direction, not a capability claimed by this preview.",
+              "status": "planned"
+            },
+            {
+              "title": "Stronger customer isolation",
+              "body": "Independent customer admission requires further identity, execution, credential and recovery controls. Workspace scoping in the bounded core does not establish hostile-tenant isolation.",
+              "status": "planned"
+            }
+          ]
+        },
+        {
+          "id": "feature-questions",
+          "title": "The questions behind the features.",
+          "layout": "faq",
+          "items": [
+            {
+              "title": "Can an agent send a message on its own?",
+              "body": "No external delivery connector is configured in the bounded core. It can prepare a draft for review and record an approved internal action; a receipt does not claim that an email was delivered."
+            },
+            {
+              "title": "Is the public workspace connected to real customer data?",
+              "body": "The public design preview contains synthetic records and simulated actions. Authenticated operations is a separate interface with its own access boundary."
+            },
+            {
+              "title": "Does local inference make every answer correct?",
+              "body": "No. Model output still needs validation and human judgment. Inspect sources, missing details and the exact proposal before approving work."
+            }
+          ]
+        }
+      ],
+      "cta": {
+        "eyebrow": "A considered next step",
+        "title": "Choose a workflow. Inspect every step.",
+        "text": "The best way to understand a capability is to see the context and decision around it.",
+        "primary": {
+          "label": "Explore the workspace",
+          "route": "workspace"
+        },
+        "secondary": {
+          "label": "Read the guide",
+          "route": "docs"
+        }
+      },
+      "updated": "2026-10-15"
+    },
+    "use-cases": {
+      "eyebrow": "Agency operations",
+      "title": "Good follow-through",
+      "accent": "starts with context.",
+      "intro": "Start with the work between meetings: commitments to clarify, drafts to prepare and decisions that need a thoughtful reviewer.",
+      "sections": [
+        {
+          "id": "agency-workflows",
+          "title": "Three useful places to begin.",
+          "layout": "cards",
+          "items": [
+            {
+              "title": "Client meeting follow-up",
+              "body": "Bring selected meeting notes and your follow-up guidance into a request. Inspect a source-backed draft and the commitments it proposes before recording the internal result.",
+              "eyebrow": "01 / Client success",
+              "bullets": [
+                "Identify supported next steps",
+                "Keep missing owners or dates visible",
+                "Review the recipient and draft together"
+              ],
+              "status": "limited"
+            },
+            {
+              "title": "Commitment review",
+              "body": "Ask the team to identify what the supplied evidence actually supports. Use the review to distinguish a firm promise from a suggestion, an unanswered question or a conflicting note.",
+              "eyebrow": "02 / Account operations",
+              "bullets": [
+                "Ground the request in selected evidence",
+                "Check commitments against their sources",
+                "Avoid invented deadlines"
+              ],
+              "status": "limited"
+            },
+            {
+              "title": "Procedure-guided drafting",
+              "body": "Combine a bounded brief with relevant text guidance. Review whether the proposed wording follows the supplied procedure and whether the evidence supports the claims it makes.",
+              "eyebrow": "03 / Delivery support",
+              "bullets": [
+                "Make expectations explicit",
+                "Keep reference material inspectable",
+                "Retain the approved draft artifact"
+              ],
+              "status": "limited"
+            }
+          ]
+        },
+        {
+          "id": "worked-example",
+          "title": "A brief worth giving the team.",
+          "layout": "steps",
+          "items": [
+            {
+              "title": "The request",
+              "body": "Review these discovery notes and the client follow-up procedure. Prepare a concise next-step draft and list only the commitments the evidence supports.",
+              "eyebrow": "Intention"
+            },
+            {
+              "title": "The evidence",
+              "body": "Select the meeting notes and the relevant procedure as text sources. Give each source a meaningful title, check its current version and leave unrelated client context out of the request.",
+              "eyebrow": "Context"
+            },
+            {
+              "title": "The review",
+              "body": "Read the proposed message beside its sources. Confirm the account, recipient and commitments. If a date or owner is uncertain, resolve it before approving rather than asking the system to guess.",
+              "eyebrow": "Judgment"
+            },
+            {
+              "title": "The result",
+              "body": "An approved internal draft, recorded commitments and an inspectable receipt. External delivery remains a separate human or future connector action.",
+              "eyebrow": "Outcome"
+            }
+          ],
+          "intro": "An illustrative agency scenario, with no claim that the example represents a real customer."
+        },
+        {
+          "id": "working-fit",
+          "title": "Where the current scope fits.",
+          "layout": "rows",
+          "items": [
+            {
+              "title": "A deliberate fit",
+              "body": "Owner-operated teams evaluating source-grounded drafts, explicit review and internal records. Begin with a small, non-sensitive example and a person who can judge the result.",
+              "status": "limited"
+            },
+            {
+              "title": "Outside the current boundary",
+              "body": "Unattended external outreach, financial transactions, destructive changes and regulated decisions are not supported use cases for this bounded implementation.",
+              "status": "planned"
+            },
+            {
+              "title": "A path to broader workflows",
+              "body": "New channels and record systems require scoped connectors, real failure handling and outcome verification. The workflow should expand after those controls are tested.",
+              "status": "planned",
+              "link": {
+                "label": "Read the security approach",
+                "route": "security"
+              }
+            }
+          ]
+        }
+      ],
+      "cta": {
+        "eyebrow": "A considered next step",
+        "title": "Walk through a client request.",
+        "text": "The synthetic workspace makes the handoff from evidence to review tangible, without connecting an account.",
+        "primary": {
+          "label": "Explore the workspace",
+          "route": "workspace"
+        },
+        "secondary": {
+          "label": "Read the guide",
+          "route": "docs"
+        }
+      },
+      "updated": "2026-10-15"
+    },
+    "pricing": {
+      "eyebrow": "Access and scope",
+      "title": "Explore first.",
+      "accent": "Decide with clarity.",
+      "intro": "Explore the public preview for free. Discuss a deployment around your workflow, infrastructure and support needs.",
+      "sections": [
+        {
+          "id": "access-options",
+          "title": "Start with what is available.",
+          "layout": "cards",
+          "items": [
+            {
+              "title": "Public preview",
+              "body": "Explore the product pages and the interactive workspace using synthetic data. There is no account registration or payment step for this public experience.",
+              "eyebrow": "Explore",
+              "price": {
+                "amount": "$0",
+                "period": "platform fee for the current preview",
+                "detail": "No payment information is requested by this site."
+              },
+              "featured": true,
+              "status": "available",
+              "bullets": [
+                "Full public product presentation",
+                "Interactive synthetic workspace",
+                "Simulated task and approval flows",
+                "Product guides and capability boundaries"
+              ],
+              "link": {
+                "label": "Explore the preview",
+                "route": "workspace"
+              }
+            },
+            {
+              "title": "Scoped deployment",
+              "body": "Plan a deployment around your workflow, model capacity, access and operating responsibilities. We’ll define the implementation and commercial terms together.",
+              "eyebrow": "Evaluate",
+              "price": {
+                "amount": "By scope",
+                "period": "after requirements are understood",
+                "detail": "No quote, paid plan or service commitment is created by browsing this site."
+              },
+              "status": "limited",
+              "bullets": [
+                "Define the intended workflow",
+                "Identify permission and data boundaries",
+                "Assess infrastructure and model requirements",
+                "Agree verification and recovery responsibilities"
+              ],
+              "link": {
+                "label": "Understand the next step",
+                "route": "contact"
+              }
+            }
+          ],
+          "intro": "The preview is free to explore. Hosting, inference and implementation are scoped separately for a deployment."
+        },
+        {
+          "id": "scope-factors",
+          "title": "What a real deployment needs to account for.",
+          "layout": "rows",
+          "items": [
+            {
+              "title": "The work itself",
+              "body": "The volume of requests, the evidence formats and the expected turnaround shape the implementation. Begin with a specific workflow and an outcome you can verify."
+            },
+            {
+              "title": "The operating environment",
+              "body": "Hosting, storage, inference and third-party services can have their own costs and limits. Any paid service requires its own explicit agreement; there is no automatic paid fallback."
+            },
+            {
+              "title": "The responsibility boundary",
+              "body": "Access management, backups, retention, incident handling and connector credentials need named owners. The public preview does not include a managed service or support commitment."
+            }
+          ]
+        },
+        {
+          "id": "pricing-questions",
+          "title": "A few straightforward answers.",
+          "layout": "faq",
+          "items": [
+            {
+              "title": "Do I need a credit card to try the preview?",
+              "body": "No. The public pages and synthetic workspace can be explored directly. The site does not offer a billing form or paid signup flow."
+            },
+            {
+              "title": "Is the operations sign-in a free public account?",
+              "body": "No. Operations is for the configured owner of the bounded core. Public registration, customer onboarding and subscription billing are not available."
+            },
+            {
+              "title": "Are model and infrastructure costs included?",
+              "body": "The current preview has no platform fee. A separate deployment would need an explicit assessment of hosting, inference and any third-party charges; no bundled price is advertised here."
+            },
+            {
+              "title": "Is there an enterprise plan or uptime guarantee?",
+              "body": "No published enterprise plan, SLA or paid support package is offered on this site. Those terms must be established separately before anyone relies on them."
+            }
+          ]
+        }
+      ],
+      "cta": {
+        "eyebrow": "A considered next step",
+        "title": "Understand the product before a commitment.",
+        "text": "Explore the workflow, read its current boundaries and decide whether it addresses the work you actually have.",
+        "primary": {
+          "label": "Explore the free preview",
+          "route": "workspace"
+        },
+        "secondary": {
+          "label": "Explore the product",
+          "route": "product"
+        }
+      },
+      "updated": "2026-10-15"
+    },
+    "about": {
+      "eyebrow": "Why PraxisForge",
+      "title": "More intention",
+      "accent": "in everyday work.",
+      "intro": "PraxisForge is an independently built exploration of a practical question: what makes an AI-assisted business outcome understandable enough to trust?",
+      "sections": [
+        {
+          "id": "our-starting-point",
+          "title": "The gap between an answer and an outcome.",
+          "layout": "prose",
+          "items": [],
+          "paragraphs": [
+            "A fluent response can make work feel complete before anything has been verified. A useful operational system needs a more concrete trail: the request, the evidence it was allowed to use, the person who approved the proposed action and a record of the result.",
+            "PraxisForge begins there. It brings specialist roles into a workspace designed around deliberate handoffs, visible boundaries and human judgment. The first bounded workflow focuses on agency follow-up drafts and internal commitments, where both the context and the decision can be inspected."
+          ]
+        },
+        {
+          "id": "convictions",
+          "title": "The principles behind the interface.",
+          "layout": "cards",
+          "items": [
+            {
+              "title": "Context before confidence",
+              "body": "A recommendation should point back to its permitted sources. Missing evidence deserves a clear blocked outcome, not a more persuasive sentence."
+            },
+            {
+              "title": "Judgment before execution",
+              "body": "The reviewer should see the actual proposal. Approval should mean a specific decision about a specific action, with a defined account, recipient and evidence boundary."
+            },
+            {
+              "title": "Evidence after action",
+              "body": "An outcome needs a record. Internal changes and external provider acceptance are different claims; the product should make that distinction legible."
+            },
+            {
+              "title": "Calm throughout",
+              "body": "Clear typography, considered pacing and restrained motion help people inspect work. The interface should give attention back to the decision that matters."
+            }
+          ]
+        },
+        {
+          "id": "built-with-purpose",
+          "title": "A platform direction with a concrete starting point.",
+          "layout": "rows",
+          "items": [
+            {
+              "title": "Hermes-powered roles",
+              "body": "The bounded core integrates Nous Research’s Hermes Agent through a constrained specialist workflow. PraxisForge is independently built; it is not presented as an official Nous Research product.",
+              "meta": "Independent integration"
+            },
+            {
+              "title": "Self-hosted direction",
+              "body": "The implementation is designed around an owner-operated environment and configured local inference. That choice does not remove the need for authentication, validation, recovery and careful operations.",
+              "meta": "Explicit operating responsibility"
+            },
+            {
+              "title": "An honest roadmap",
+              "body": "The public preview, bounded core and planned connectors have different readiness levels. We describe them separately so the ambition does not obscure what has actually been built.",
+              "meta": "Visible progress",
+              "link": {
+                "label": "Read the changelog",
+                "route": "changelog"
+              }
+            }
+          ]
+        }
+      ],
+      "cta": {
+        "eyebrow": "A considered next step",
+        "title": "Meet the product through the work.",
+        "text": "Start with a brief, inspect its sources and see where the next decision belongs.",
+        "primary": {
+          "label": "Explore the product",
+          "route": "product"
+        },
+        "secondary": {
+          "label": "Read our principles",
+          "route": "principles"
+        }
+      },
+      "updated": "2026-10-15"
+    },
+    "security": {
+      "eyebrow": "Security approach",
+      "title": "Control belongs",
+      "accent": "in the design.",
+      "intro": "Clear permission boundaries, exact approvals and inspectable outcomes guide the bounded core. This page describes implementation choices and limits, not a certification.",
+      "sections": [
+        {
+          "id": "security-boundaries",
+          "title": "A deliberate boundary around each decision.",
+          "layout": "cards",
+          "items": [
+            {
+              "title": "Authenticated operations",
+              "body": "The core requires owner sign-in and applies workspace membership checks to its resources. The public synthetic workspace is a separate demonstration and does not grant access to core records.",
+              "status": "limited"
+            },
+            {
+              "title": "Approval for the exact action",
+              "body": "Task, actor, workspace, account, recipient, content, commitments, sources and expiry are part of the approval boundary. A changed or stale proposal must not reuse an earlier approval.",
+              "status": "limited"
+            },
+            {
+              "title": "Evidence treated as data",
+              "body": "Source text is untrusted context. It cannot grant an agent new permissions or authorize external actions. Structured model outputs are validated before business state changes.",
+              "status": "limited"
+            },
+            {
+              "title": "Restricted specialist execution",
+              "body": "The bounded integration uses a configured local model with agent tools disabled. The specialist roles have no supported path for sending email, browsing accounts or administering the host.",
+              "status": "limited"
+            }
+          ]
+        },
+        {
+          "id": "record-and-recovery",
+          "title": "Know what happened. Know the remaining work.",
+          "layout": "rows",
+          "items": [
+            {
+              "title": "Internal changes with a receipt",
+              "body": "Approved drafts and commitments are recorded together with their internal receipt. The record describes that internal action; it is not a provider delivery confirmation."
+            },
+            {
+              "title": "Visible unsuccessful outcomes",
+              "body": "Tasks can fail, block, cancel or require a new decision. The interface should show those outcomes without quietly relabeling them as completion."
+            },
+            {
+              "title": "Recovery is an evidence gate",
+              "body": "An encrypted off-host production backup restored successfully into a fresh isolated database, with matching schema and business records. This is a logical database restore test; full host recovery, scheduled backups and recovery-time or recovery-point guarantees remain outside this release."
+            }
+          ]
+        },
+        {
+          "id": "honest-limits",
+          "title": "Where further assurance is required.",
+          "layout": "cards",
+          "items": [
+            {
+              "title": "Independent customer isolation",
+              "body": "Workspace authorization is part of the core. Admission of unrelated customers still needs further isolation, identity, credential and operating review.",
+              "status": "planned"
+            },
+            {
+              "title": "External connector permissions",
+              "body": "Mailbox, drive, messaging and third-party CRM access are not configured capabilities. Each future connector needs its own scope, authorization, failure handling and verification.",
+              "status": "planned"
+            },
+            {
+              "title": "Formal assurance",
+              "body": "No SOC 2, ISO certification, penetration-test attestation or regulatory-compliance claim is made here. The presence of technical controls is not a substitute for independent assurance.",
+              "status": "limited"
+            }
+          ]
+        },
+        {
+          "id": "safe-evaluation",
+          "title": "Evaluate with care.",
+          "layout": "prose",
+          "items": [],
+          "paragraphs": [
+            "Use synthetic or non-sensitive material while evaluating the product. Read the exact proposal and its sources before making a decision. Do not assume a model’s answer is correct because it is detailed or confident.",
+            "Do not place passwords, access tokens or unrelated personal information into source text. Product browsing does not create a confidentiality, support or managed-service agreement. Review the privacy and terms notices for the current public experience."
+          ]
+        },
+        {
+          "id": "security-questions",
+          "title": "Practical questions.",
+          "layout": "faq",
+          "items": [
+            {
+              "title": "Does local inference mean no data is processed?",
+              "body": "No. The authenticated core processes the request and selected evidence in its configured environment. Public hosting and edge services also handle web requests; the privacy notice explains the public experience."
+            },
+            {
+              "title": "Can I use this for regulated or critical decisions?",
+              "body": "The preview is not offered as a validated regulated decision system. A deployment would need a specific risk assessment, operating controls and applicable professional or legal review."
+            },
+            {
+              "title": "How should I raise a concern?",
+              "body": "The contact page describes the current communication route. Share a concise description without including passwords, private keys or other people’s sensitive information."
+            }
+          ]
+        }
+      ],
+      "cta": {
+        "eyebrow": "A considered next step",
+        "title": "Understand the boundary before using the capability.",
+        "text": "Read the product guide, distinguish the preview from operations and inspect the evidence behind every consequential decision.",
+        "primary": {
+          "label": "Read the product guide",
+          "route": "docs"
+        },
+        "secondary": {
+          "label": "Read the privacy notice",
+          "route": "privacy"
+        }
+      },
+      "updated": "2026-10-15"
+    },
+    "contact": {
+      "eyebrow": "A useful conversation",
+      "title": "Start with",
+      "accent": "the work.",
+      "intro": "For product questions or a scoped deployment discussion, start with a concise email and a concrete workflow: what begins it, which evidence it can use and what a person reviews at the end.",
+      "sections": [
+        {
+          "id": "prepare-the-brief",
+          "title": "Bring a clear brief to the conversation.",
+          "layout": "steps",
+          "items": [
+            {
+              "title": "Describe the outcome",
+              "body": "What should exist when the work is finished: a reviewed draft, a set of commitments or a record change? Define the result in terms a person can inspect.",
+              "eyebrow": "01 / The work"
+            },
+            {
+              "title": "Name the context",
+              "body": "List the kinds of evidence involved and the tools where they live. Describe data categories rather than sharing private client records, credentials or sensitive attachments.",
+              "eyebrow": "02 / The evidence"
+            },
+            {
+              "title": "Keep the boundary explicit",
+              "body": "Explain who may review the proposal and what must require approval. Identify external actions separately from internal drafting and records.",
+              "eyebrow": "03 / The decision"
+            },
+            {
+              "title": "Set realistic operating needs",
+              "body": "Describe expected volume, timing, hosting responsibilities and recovery expectations. Those details shape a sensible evaluation; they are not commitments created by this website.",
+              "eyebrow": "04 / The environment"
+            }
+          ]
+        },
+        {
+          "id": "choose-the-next-step",
+          "title": "A direct way to get oriented.",
+          "layout": "rows",
+          "items": [
+            {
+              "title": "Exploring the idea?",
+              "body": "Start with the product guide and synthetic workspace. You can inspect the intended experience without creating an account or submitting personal information.",
+              "link": {
+                "label": "Read the guide",
+                "route": "docs"
+              }
+            },
+            {
+              "title": "Already the configured operator?",
+              "body": "Use operations sign-in to review your own workspace. The authenticated interface is separate from the public demo and is not an open registration form.",
+              "link": {
+                "label": "Open operations",
+                "route": "operations"
+              }
+            },
+            {
+              "title": "Discussing a possible deployment?",
+              "body": "Email a short workflow brief using the contact address on this page. A conversation can clarify fit and scope; it does not create a quote, operating agreement or permission to process customer data.",
+              "link": {
+                "label": "Understand access and scope",
+                "route": "pricing"
+              }
+            }
+          ]
+        },
+        {
+          "id": "before-sharing",
+          "title": "Keep the first conversation lightweight.",
+          "layout": "prose",
+          "items": [],
+          "paragraphs": [
+            "A small synthetic example is more useful than a large unfiltered export. A few representative notes, a desired draft and the approval boundary are enough to start evaluating whether the approach fits.",
+            "Please keep passwords, API keys, private client documents and payment information out of an initial enquiry. A scoped data-sharing and operating arrangement should come before real customer material."
+          ]
+        }
+      ],
+      "cta": {
+        "eyebrow": "A considered next step",
+        "title": "See what a good brief becomes.",
+        "text": "Explore the synthetic workspace and bring the same clarity to your own workflow.",
+        "primary": {
+          "label": "Explore the workspace",
+          "route": "workspace"
+        },
+        "secondary": {
+          "label": "Explore use cases",
+          "route": "use-cases"
+        }
+      },
+      "updated": "2026-10-15"
+    },
+    "docs": {
+      "eyebrow": "Product guide",
+      "title": "A clear path",
+      "accent": "through the work.",
+      "intro": "A practical guide to the preview and bounded operations workflow. Begin with the mode you are using, then follow the evidence and review trail.",
+      "sections": [
+        {
+          "id": "choose-your-mode",
+          "title": "First, know which workspace you are in.",
+          "layout": "rows",
+          "items": [
+            {
+              "title": "Public design preview",
+              "body": "The workspace contains synthetic tasks, clients and sources. Search, filters, task details and simulated approvals are designed for exploration. No external messages are sent and no real account is connected.",
+              "eyebrow": "No sign-in required",
+              "status": "available",
+              "link": {
+                "label": "Open the synthetic workspace",
+                "route": "workspace"
+              }
+            },
+            {
+              "title": "Authenticated operations",
+              "body": "Operations requires the configured owner’s credentials. It manages actual core records and requests; it is not a public signup flow. Treat its source text and approvals as real operator work.",
+              "eyebrow": "Configured owner only",
+              "status": "limited",
+              "link": {
+                "label": "Open operations sign-in",
+                "route": "operations"
+              }
+            }
+          ]
+        },
+        {
+          "id": "explore-the-demo",
+          "title": "A five-minute tour of the preview.",
+          "layout": "steps",
+          "items": [
+            {
+              "title": "Find a task",
+              "body": "Browse the task list, use the search field and narrow the view by status. The records are illustrative examples of agency work."
+            },
+            {
+              "title": "Inspect the detail",
+              "body": "Open a task to see its proposed action and activity. Switch to Evidence to inspect the supporting source preview where one is available."
+            },
+            {
+              "title": "Review the proposal",
+              "body": "Check the account, recipient, subject and message together. Approve or reject in the demo to see how the decision changes the simulated state."
+            },
+            {
+              "title": "Reset and compare",
+              "body": "Reset the demo to return to its initial sample state. Try another request or explore the agent, knowledge and connector views; connector descriptions remain a design preview."
+            }
+          ]
+        },
+        {
+          "id": "bounded-core-guide",
+          "title": "The bounded core workflow.",
+          "layout": "steps",
+          "items": [
+            {
+              "title": "Sign in to operations",
+              "body": "Use only the configured operator account. After sign-in, confirm the workspace before adding evidence or submitting work."
+            },
+            {
+              "title": "Add selected text evidence",
+              "body": "Give each source a meaningful title and provide the relevant bounded text. Keep credentials and unrelated sensitive data out of the content. Check the source you intend to use before creating a request."
+            },
+            {
+              "title": "Submit a specific request",
+              "body": "Describe the client and desired draft, select the supporting documents and check the intended recipient/account. The request becomes a durable task."
+            },
+            {
+              "title": "Watch the actual outcome",
+              "body": "Stages and history show the work as it proceeds. A local model can take time. A blocked or failed task is an outcome to inspect, not an instruction to assume success or repeatedly submit the same work."
+            },
+            {
+              "title": "Review the exact action",
+              "body": "Read the draft, commitments and evidence together. Approve only a supported, current proposal. Reject or cancel when the proposed action should not proceed."
+            },
+            {
+              "title": "Inspect and download the receipt",
+              "body": "After a completed internal action, inspect its receipt and download the JSON artifact. It retains the approved action and source hashes. It does not confirm external email delivery."
+            }
+          ],
+          "intro": "These steps describe the implemented owner-operated core. Public availability and production verification are tracked separately on the status page."
+        },
+        {
+          "id": "read-the-states",
+          "title": "A status is part of the record.",
+          "layout": "rows",
+          "items": [
+            {
+              "title": "Queued or running",
+              "body": "The task is waiting or being processed. Stage, attempt and history provide context; the request is not yet a completed result."
+            },
+            {
+              "title": "Awaiting approval",
+              "body": "A proposal is ready for a person to inspect. No approved internal action has been committed yet."
+            },
+            {
+              "title": "Completed",
+              "body": "The approved internal draft and commitments have been recorded with a receipt. Read its verification text for the exact outcome."
+            },
+            {
+              "title": "Blocked, failed or cancelled",
+              "body": "The work could not proceed, encountered an error or was stopped. Inspect the reason and history before deciding whether to provide better evidence or create a new request."
+            }
+          ]
+        },
+        {
+          "id": "review-checklist",
+          "title": "Before you approve.",
+          "layout": "cards",
+          "items": [
+            {
+              "title": "Check the identity",
+              "body": "Confirm the client, account and intended recipient. An otherwise useful draft can still be wrong for the person or context it names."
+            },
+            {
+              "title": "Check the support",
+              "body": "Read the cited sources and check names, dates, owners and commitments. Do not fill an evidence gap with an assumption."
+            },
+            {
+              "title": "Check the scope",
+              "body": "Understand that the current core records an internal draft and commitments. Sending or synchronizing externally requires a separately supported connector."
+            },
+            {
+              "title": "Check the result",
+              "body": "Keep the receipt and approved artifact if you need to review or hand off the work. Treat a download as a record, not a claim that every later action has happened."
+            }
+          ]
+        }
+      ],
+      "cta": {
+        "eyebrow": "A considered next step",
+        "title": "Learn by inspecting a complete example.",
+        "text": "The public demo gives you a safe place to explore the request, evidence and approval flow.",
+        "primary": {
+          "label": "Open the demo",
+          "route": "workspace"
+        },
+        "secondary": {
+          "label": "Review capability boundaries",
+          "route": "features"
+        }
+      },
+      "updated": "2026-10-15"
+    },
+    "changelog": {
+      "eyebrow": "Product notes",
+      "title": "Progress,",
+      "accent": "with a record.",
+      "intro": "A concise account of the product direction and implemented milestones. Local verification and public release are different steps.",
+      "sections": [
+        {
+          "id": "release-notes",
+          "title": "The initial product chapter.",
+          "layout": "timeline",
+          "items": [
+            {
+              "title": "An editorial product experience",
+              "body": "A cinematic introduction, principles and a synthetic workspace establish the design language: charcoal, copper, cream, clear typography and restrained motion.",
+              "eyebrow": "15 October 2026",
+              "meta": "Frontend preview",
+              "status": "available",
+              "bullets": [
+                "Responsive public presentation",
+                "Synthetic task and evidence exploration",
+                "Simulated approvals and receipts",
+                "Reduced-motion and keyboard interaction checks"
+              ]
+            },
+            {
+              "title": "A bounded operations implementation",
+              "body": "The owner-operated core completed a live source-backed agency workflow through three Hermes specialists, recovered from a worker interruption and produced an exactly approved internal receipt. An encrypted production backup also passed an isolated restore.",
+              "eyebrow": "15 October 2026",
+              "meta": "Core implementation / limited scope",
+              "status": "limited",
+              "bullets": [
+                "Text knowledge and source hashes",
+                "Durable task attempts and history",
+                "Approval-bound internal commitments",
+                "Receipt artifact download"
+              ]
+            },
+            {
+              "title": "A fuller product guide",
+              "body": "Product, capabilities, use cases, access, security and guidance pages make the intended workflow and present boundaries easier to understand.",
+              "eyebrow": "Current frontend work",
+              "meta": "Presentation expansion",
+              "status": "limited",
+              "bullets": [
+                "Clear preview versus core distinction",
+                "Transparent preview pricing and capability boundaries",
+                "Explicit external-connector roadmap",
+                "Maintained notices and capability copy"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "next-milestones",
+          "title": "What remains a milestone.",
+          "layout": "rows",
+          "items": [
+            {
+              "title": "Repeated evaluation and host recovery",
+              "body": "One completed live workflow and an isolated logical database restore are verified. Repeated task evaluations, automatic backup retention and a clean-machine host restore remain required before broader reliance.",
+              "status": "planned"
+            },
+            {
+              "title": "Scoped external connectors",
+              "body": "Email, drive, messaging and external CRM work need actual account authorization and provider-outcome verification. No delivery capability is claimed ahead of those gates.",
+              "status": "planned"
+            },
+            {
+              "title": "Broader customer readiness",
+              "body": "Stronger independent-customer isolation, onboarding, operating agreements and measured capacity remain further product work.",
+              "status": "planned"
+            }
+          ]
+        }
+      ],
+      "cta": {
+        "eyebrow": "A considered next step",
+        "title": "Explore the current experience.",
+        "text": "The product guide describes what you can try now and where the implementation remains bounded.",
+        "primary": {
+          "label": "Read the product guide",
+          "route": "docs"
+        },
+        "secondary": {
+          "label": "Read release status",
+          "route": "status"
+        }
+      },
+      "updated": "2026-10-15"
+    },
+    "status": {
+      "eyebrow": "Release and capability status",
+      "title": "A visible state",
+      "accent": "for every claim.",
+      "intro": "This is a maintained product-readiness summary, not an automated uptime monitor. It describes availability boundaries without implying a service guarantee.",
+      "sections": [
+        {
+          "id": "capability-status",
+          "title": "What is available to explore.",
+          "layout": "rows",
+          "items": [
+            {
+              "title": "Public product preview",
+              "body": "The public presentation and synthetic workspace are available for exploration. Sample actions are simulated and do not contact external providers.",
+              "status": "available",
+              "meta": "Public preview",
+              "link": {
+                "label": "Explore the workspace",
+                "route": "workspace"
+              }
+            },
+            {
+              "title": "Owner-operated core",
+              "body": "Authenticated operations, text knowledge, three specialist roles, exact approvals and internal receipts are verified in a completed live workflow, including worker-interruption recovery. Access remains limited to the configured owner.",
+              "status": "limited",
+              "meta": "Restricted operator access",
+              "link": {
+                "label": "Read the guide",
+                "route": "docs"
+              }
+            },
+            {
+              "title": "External delivery and synchronization",
+              "body": "Mailbox sending, connected-drive synchronization, messaging and third-party CRM writes are not configured product capabilities.",
+              "status": "planned",
+              "meta": "Connector milestones",
+              "link": {
+                "label": "See planned capabilities",
+                "route": "features"
+              }
+            },
+            {
+              "title": "Public customer onboarding",
+              "body": "Open registration, paid subscriptions, managed support and independent customer service guarantees are not offered by this release.",
+              "status": "planned",
+              "meta": "Future service readiness"
+            }
+          ]
+        },
+        {
+          "id": "readiness-gates",
+          "title": "Progress is measured at the boundary.",
+          "layout": "cards",
+          "items": [
+            {
+              "title": "Local and live workflow evidence",
+              "body": "The local and live agency flows exercised source-backed drafting, exact approval and internal receipt creation. The live task recovered after a worker interruption; an encrypted off-host production backup passed a fresh isolated database restore.",
+              "meta": "Implementation evidence"
+            },
+            {
+              "title": "Measured limits and remaining recovery work",
+              "body": "The successful CPU workflow required about 14.5 minutes of model work. One successful run is not a reliability or capacity benchmark. Repeated evaluations, scheduled backup retention and full host recovery remain further work.",
+              "meta": "Release evidence"
+            },
+            {
+              "title": "No uptime or capacity promise",
+              "body": "This page does not provide live health telemetry, incident notifications or an SLA. Model turnaround and operating capacity must be evaluated for the actual deployment.",
+              "meta": "Operating boundary"
+            }
+          ]
+        },
+        {
+          "id": "status-questions",
+          "title": "How to read this page.",
+          "layout": "faq",
+          "items": [
+            {
+              "title": "Does “available” mean the core is open to everyone?",
+              "body": "No. Available describes the public preview here. The bounded operations core is restricted to its configured operator and is marked limited."
+            },
+            {
+              "title": "Are these real-time health checks?",
+              "body": "No. These are maintained readiness notes. A successful page load does not prove every authenticated workflow or external dependency is healthy."
+            },
+            {
+              "title": "Where can I see what changed?",
+              "body": "The changelog records product milestones and the guide explains current behavior. Neither creates an uptime, delivery or support commitment."
+            }
+          ]
+        }
+      ],
+      "cta": {
+        "eyebrow": "A considered next step",
+        "title": "Inspect the experience, not just its status.",
+        "text": "Read the workflow guide and explore the synthetic preview to understand the intended control and evidence trail.",
+        "primary": {
+          "label": "Read the guide",
+          "route": "docs"
+        },
+        "secondary": {
+          "label": "Read product notes",
+          "route": "changelog"
+        }
+      },
+      "notice": {
+        "label": "Current release boundary",
+        "text": "The bounded owner-operated core has a verified live workflow, interruption recovery, exact internal receipt and encrypted isolated database restore. External email and CRM delivery remain unconfigured. CPU inference is slow; no uptime, capacity or host-recovery guarantee is offered."
+      },
+      "updated": "2026-10-15"
+    },
+    "resources": {
+      "eyebrow": "The resource collection",
+      "title": "A little context.",
+      "accent": "A clearer next step.",
+      "intro": "Find the product guide, capability boundaries and release notes in one place. Start with the question you are trying to answer.",
+      "sections": [
+        {
+          "id": "getting-oriented",
+          "title": "Understand the product.",
+          "layout": "cards",
+          "items": [
+            {
+              "title": "The product, from end to end",
+              "body": "Follow the path from a bounded request through evidence, specialist handoffs and an exact review decision to an inspectable internal result.",
+              "eyebrow": "Product overview",
+              "link": {
+                "label": "Explore the product",
+                "route": "product"
+              }
+            },
+            {
+              "title": "A practical first workflow",
+              "body": "See how selected meeting notes and procedure guidance become a client follow-up draft and a clear set of supported commitments.",
+              "eyebrow": "Use cases",
+              "link": {
+                "label": "Explore agency workflows",
+                "route": "use-cases"
+              }
+            },
+            {
+              "title": "The product guide",
+              "body": "Learn the difference between the synthetic workspace and authenticated operations, how to inspect a proposal and what a receipt actually proves.",
+              "eyebrow": "How to use it",
+              "link": {
+                "label": "Read the guide",
+                "route": "docs"
+              }
+            }
+          ]
+        },
+        {
+          "id": "evaluating-the-boundary",
+          "title": "Ask the consequential questions.",
+          "layout": "rows",
+          "items": [
+            {
+              "title": "Capability and roadmap",
+              "body": "Separate features you can explore, the bounded core implementation and planned external connectors. A roadmap item is not an active integration.",
+              "link": {
+                "label": "Review capabilities",
+                "route": "features"
+              }
+            },
+            {
+              "title": "Security approach",
+              "body": "Read the design choices behind workspace authorization, evidence handling, exact approvals and internal receipts, together with their remaining assurance limits.",
+              "link": {
+                "label": "Read the security approach",
+                "route": "security"
+              }
+            },
+            {
+              "title": "Access and scope",
+              "body": "The public preview has no platform fee. A separate deployment starts with a clear scope, your requirements and agreed operating responsibilities.",
+              "link": {
+                "label": "Understand access",
+                "route": "pricing"
+              }
+            }
+          ]
+        },
+        {
+          "id": "keeping-perspective",
+          "title": "Keep progress and policies in view.",
+          "layout": "cards",
+          "items": [
+            {
+              "title": "Product notes",
+              "body": "Read the implemented milestones and the direction of the next release without confusing local verification with a completed production proof.",
+              "link": {
+                "label": "Read the changelog",
+                "route": "changelog"
+              }
+            },
+            {
+              "title": "Release status",
+              "body": "See maintained readiness notes and the current verification boundary. This is product status, not automated uptime monitoring or an SLA.",
+              "link": {
+                "label": "Read release status",
+                "route": "status"
+              }
+            },
+            {
+              "title": "Notices and accessibility",
+              "body": "Find the privacy, terms, cookie and accessibility information for the current public experience.",
+              "link": {
+                "label": "Open the notice hub",
+                "route": "legal"
+              }
+            }
+          ]
+        }
+      ],
+      "cta": {
+        "eyebrow": "Learn by exploring",
+        "title": "See the workflow for yourself.",
+        "text": "The synthetic workspace is a useful place to inspect a request, its evidence and the decision it asks of you.",
+        "primary": {
+          "label": "Explore the workspace",
+          "route": "workspace"
+        },
+        "secondary": {
+          "label": "Get in touch",
+          "route": "contact"
+        }
+      },
+      "updated": "2026-10-15"
+    },
+    "legal": {
+      "eyebrow": "Legal & trust",
+      "title": "Clear expectations.",
+      "accent": "Before you begin.",
+      "intro": "The policies behind the PraxisForge AI public preview: what you can explore, how information is handled, and where to ask questions.",
+      "notice": {
+        "label": "Public preview · Updated 15 October 2026",
+        "text": "These notices describe the current demonstration. They do not certify compliance, offer a production service agreement, or turn planned capabilities into available features."
+      },
+      "sections": [
+        {
+          "id": "notices",
+          "title": "Find the detail you need.",
+          "layout": "cards",
+          "items": [
+            {
+              "title": "Privacy",
+              "body": "Information handled by the public website, operator communications, and restricted operations preview.",
+              "link": {
+                "label": "Read the notice",
+                "route": "privacy"
+              }
+            },
+            {
+              "title": "Terms of use",
+              "body": "The scope of the preview, responsible use, ownership, and the limits of AI-generated work.",
+              "link": {
+                "label": "Read the notice",
+                "route": "terms"
+              }
+            },
+            {
+              "title": "Cookies & browser storage",
+              "body": "Authentication cookies, security services, and choices available in your browser.",
+              "link": {
+                "label": "Read the notice",
+                "route": "cookies"
+              }
+            },
+            {
+              "title": "Accessibility",
+              "body": "Our design approach, evaluation limits, and a practical way to report an access barrier.",
+              "link": {
+                "label": "Read the notice",
+                "route": "accessibility"
+              }
+            }
+          ]
+        },
+        {
+          "id": "operator",
+          "title": "Who to contact.",
+          "layout": "prose",
+          "items": [],
+          "paragraphs": [
+            "PraxisForge AI is the name used for this independently operated project and public preview. Contact the operator at muhammadzahidulislam2222@gmail.com for privacy, accessibility, security, or general questions.",
+            "This website does not represent Nous Research or any cloud, model, or application provider. Third-party names describe relevant technology; they do not imply sponsorship or endorsement."
+          ]
+        },
+        {
+          "id": "scope",
+          "title": "A preview with a defined boundary.",
+          "layout": "prose",
+          "items": [],
+          "paragraphs": [
+            "The public workspace uses illustrative records to demonstrate an operations interface. The restricted operations area is an owner-controlled test environment. Neither is an invitation to upload confidential client records, connect live business accounts, or rely on unattended external actions.",
+            "A customer deployment would require a separately agreed scope, identified contracting parties, data-processing arrangements where applicable, retention rules, and operating responsibilities. Those arrangements are not created by browsing this website."
+          ]
+        },
+        {
+          "id": "rights",
+          "title": "Rights depend on the circumstances.",
+          "layout": "prose",
+          "items": [],
+          "paragraphs": [
+            "US, EU, and other rules can apply differently according to the operator, visitor, service, and processing involved. These notices describe relevant rights without claiming that every law applies to every visitor or that this preview has completed a compliance certification. Nothing here limits rights or remedies that applicable law makes mandatory."
+          ]
+        },
+        {
+          "id": "updates",
+          "title": "How these notices change.",
+          "layout": "prose",
+          "items": [],
+          "paragraphs": [
+            "Each notice shows its update date. When the preview changes, the relevant notice will be revised to describe the resulting behavior. A future paid service or materially different use of personal information will need its own clear terms and notices before it is introduced."
+          ]
+        }
+      ],
+      "cta": {
+        "eyebrow": "A direct conversation",
+        "title": "Questions deserve a clear answer.",
+        "text": "Tell us which policy, feature, or data use you want to understand.",
+        "primary": {
+          "label": "Contact the operator",
+          "route": "contact"
+        },
+        "secondary": {
+          "label": "Explore the preview",
+          "route": "workspace"
+        }
+      },
+      "updated": "2026-10-15",
+      "sources": [
+        {
+          "label": "FTC advertising guidance",
+          "url": "https://www.ftc.gov/business-guidance/advertising-marketing"
+        }
+      ]
+    },
+    "privacy": {
+      "eyebrow": "Privacy notice",
+      "title": "Your information.",
+      "accent": "Explained plainly.",
+      "intro": "What the current public preview handles, why it is handled, and how to contact the operator about your information.",
+      "notice": {
+        "label": "Updated 15 October 2026 · Preview scope",
+        "text": "Use synthetic examples in this preview. Customer onboarding, regulated data, and live business integrations are outside its current scope."
+      },
+      "sections": [
+        {
+          "id": "contact",
+          "title": "Operator and privacy contact.",
+          "layout": "prose",
+          "items": [],
+          "paragraphs": [
+            "PraxisForge AI is the project name for this public preview. Privacy questions and requests go to muhammadzahidulislam2222@gmail.com. This notice covers this hosted preview; an independently self-hosted deployment has its own operator and must provide notices for its own processing."
+          ]
+        },
+        {
+          "id": "information",
+          "title": "Information by context.",
+          "layout": "rows",
+          "items": [
+            {
+              "title": "Visiting the website",
+              "body": "The hosting and Cloudflare edge services receive connection and request information, such as IP address, browser information, requested URL, time, and security events, to deliver and protect the website. This is separate from anything you type into the demonstration."
+            },
+            {
+              "title": "Exploring the public workspace",
+              "body": "The interface starts with illustrative records. Demo decisions and edits are held in the current page state; the application does not implement localStorage or sessionStorage persistence for them. URL parameters may identify the current view. Do not include private information in URLs."
+            },
+            {
+              "title": "Contacting the operator",
+              "body": "An email provides your address, message, and any attachments you choose to send. It is handled through the operator’s email service to answer and manage the conversation. Please exclude passwords, API keys, and unnecessary sensitive information."
+            },
+            {
+              "title": "Restricted operations",
+              "body": "Authorized access uses account identifiers, a password hash, and server-side session records. Tasks, supplied knowledge, execution events, approvals, results, and evidence can be stored as durable business records. This area is reserved for controlled testing; it is not open customer registration."
+            }
+          ]
+        },
+        {
+          "id": "purposes",
+          "title": "Why information is used.",
+          "layout": "prose",
+          "items": [],
+          "paragraphs": [
+            "The preview uses information to deliver pages, authenticate authorized access, protect the service, investigate failures, maintain test records, and respond to requests. The current operations configuration runs model inference on the self-hosted environment; it has no configured fallback to an external model API. That does not mean the public website is disconnected from hosting, edge, or email providers.",
+            "Where a law requires a lawful basis, that basis depends on the purpose: service or pre-contract requests, legitimate operational and security interests subject to the required balancing, legal obligations, or consent for a genuinely optional use where required. Browsing this notice is not blanket consent."
+          ]
+        },
+        {
+          "id": "recipients",
+          "title": "Services and disclosures.",
+          "layout": "prose",
+          "items": [],
+          "paragraphs": [
+            "The operator and relevant infrastructure or email providers may process information needed for their role. Cloudflare handles edge delivery and security; email you send is processed by the email providers involved. Information may also be disclosed where legally required or necessary to address abuse, protect rights, or investigate a security incident.",
+            "The application has no implemented advertising network, data-broker sale, or cross-site advertising feature. No claim is made that every edge diagnostic is disabled. Optional analytics or new integrations require a review of the notice, provider arrangements, and any necessary user choices before use."
+          ]
+        },
+        {
+          "id": "retention",
+          "title": "Retention and deletion.",
+          "layout": "prose",
+          "items": [],
+          "paragraphs": [
+            "Authentication cookies expire after eight hours unless removed sooner. Other data does not have one universal automatic deletion period in this preview. Retention of correspondence, request logs, test records, and backups depends on the relevant system and operational need; a finalized customer retention schedule is not yet available.",
+            "Removing a knowledge document from retrieval clears its active content from that retrieval path. It does not automatically erase earlier task snapshots, results, audit records, or backup copies. There is no complete self-service account erasure or export workflow. Ask the operator for a review of specific information; the response will explain what can be removed, what must be retained, and any technical limits."
+          ]
+        },
+        {
+          "id": "international",
+          "title": "Location and transfers.",
+          "layout": "prose",
+          "items": [],
+          "paragraphs": [
+            "The hosted preview, edge network, and email services may process information in more than one country. This notice does not promise EU-only or US-only residency. Before a customer deployment that requires regional restrictions or international-transfer safeguards, the actual providers, locations, contractual measures, and applicable requirements must be agreed."
+          ]
+        },
+        {
+          "id": "eu-rights",
+          "title": "EU and EEA requests.",
+          "layout": "prose",
+          "items": [],
+          "paragraphs": [
+            "Where GDPR applies, you may have rights to access, correct, erase, restrict, object to processing, or receive portable data, depending on the processing and legal conditions. Consent can be withdrawn for future consent-based processing. You can also raise a concern with a competent data protection authority. The demonstration is not offered for decisions that produce legal or similarly significant effects about people."
+          ]
+        },
+        {
+          "id": "us-rights",
+          "title": "US and California requests.",
+          "layout": "prose",
+          "items": [],
+          "paragraphs": [
+            "Privacy rights vary across US states and depend on whether the relevant law covers the activity. Where California law applies, rights can include knowing, deleting, correcting, and opting out of covered sale or sharing, limiting certain sensitive-information uses, and receiving non-discriminatory treatment for exercising rights. Applicable opt-out signals, including Global Privacy Control, must be respected where legally required. The current application does not implement advertising sale or sharing.",
+            "The application does not alter its behavior in response to the browser’s legacy Do Not Track header. That disclosure does not limit any obligation to honor a legally recognized privacy signal."
+          ]
+        },
+        {
+          "id": "requests",
+          "title": "Make a request.",
+          "layout": "prose",
+          "items": [],
+          "paragraphs": [
+            "Email muhammadzahidulislam2222@gmail.com with the nature of your request and enough context to locate the relevant information. Avoid sending identity documents unless a proportionate verification method is agreed. The operator may need to confirm your identity or authority without revealing another person’s data. Requests will be handled within the deadlines applicable to the circumstances; reasons and available options will be explained if a request cannot be fulfilled."
+          ]
+        },
+        {
+          "id": "children",
+          "title": "Children and sensitive information.",
+          "layout": "prose",
+          "items": [],
+          "paragraphs": [
+            "This is a business-operations demonstration, not a service directed to children. Do not submit children’s information, health records, payment credentials, identity documents, or other regulated or highly sensitive data. Contact the operator if such information may have been submitted. Security controls reduce risk; they do not eliminate it."
+          ]
+        }
+      ],
+      "cta": {
+        "eyebrow": "A direct conversation",
+        "title": "A privacy question is welcome.",
+        "text": "Describe the data or interaction you are concerned about. You do not need an account to contact the operator.",
+        "primary": {
+          "label": "Contact the operator",
+          "route": "contact"
+        },
+        "secondary": {
+          "label": "Explore the preview",
+          "route": "workspace"
+        }
+      },
+      "updated": "2026-10-15",
+      "sources": [
+        {
+          "label": "European Commission: individual data rights",
+          "url": "https://commission.europa.eu/law/law-topic/data-protection/information-individuals_en"
+        },
+        {
+          "label": "California Attorney General: CCPA",
+          "url": "https://www.oag.ca.gov/privacy/ccpa"
+        },
+        {
+          "label": "FTC: consumer privacy",
+          "url": "https://www.ftc.gov/business-guidance/privacy-security/consumer-privacy"
+        }
+      ]
+    },
+    "terms": {
+      "eyebrow": "Terms of use",
+      "title": "Explore responsibly.",
+      "accent": "Keep people in control.",
+      "intro": "The practical terms for browsing and testing the PraxisForge AI preview.",
+      "notice": {
+        "label": "Updated 15 October 2026 · Public demonstration",
+        "text": "This preview has no paid checkout, customer service-level agreement, or general production-use offer. Any future paid engagement requires a separate written agreement."
+      },
+      "sections": [
+        {
+          "id": "scope",
+          "title": "What you may explore.",
+          "layout": "prose",
+          "items": [],
+          "paragraphs": [
+            "You may browse the public pages and interact with the illustrative workspace for evaluation. Access to the restricted operations area requires the operator’s permission and valid credentials. Do not attempt to enter another workspace, discover credentials, bypass controls, or access information you are not authorized to see."
+          ]
+        },
+        {
+          "id": "acceptable-use",
+          "title": "Responsible use.",
+          "layout": "prose",
+          "items": [],
+          "paragraphs": [
+            "Do not disrupt the service, send malicious content, impersonate others, infringe rights, or use the preview for unlawful activity. Test only data and systems you are authorized to use. Responsible security reports are welcome through the contact page; do not expose other people’s data or continue testing after identifying a vulnerability that could harm the service."
+          ]
+        },
+        {
+          "id": "ai",
+          "title": "AI output needs review.",
+          "layout": "prose",
+          "items": [],
+          "paragraphs": [
+            "AI-generated plans, summaries, drafts, and recommendations can be incomplete, inaccurate, or unsuitable. Illustrative records and simulated approvals are demonstrations, not proof that an external action occurred. A real result needs appropriate evidence and verification.",
+            "Review source material, recipients, accounts, content, and permissions before approving a consequential action. The preview is not provided for medical, legal, financial, employment, credit, or other regulated decisions, and it is not professional advice."
+          ]
+        },
+        {
+          "id": "content",
+          "title": "Your information and project materials.",
+          "layout": "prose",
+          "items": [],
+          "paragraphs": [
+            "You retain rights you already have in material you lawfully provide. Providing material authorizes only the processing reasonably necessary for the interaction you requested, subject to the privacy notice; it does not grant unrestricted rights to publish it or train a model on it. Use synthetic examples here rather than confidential information.",
+            "The project’s branding, artwork, interface, and content may be protected by intellectual-property rights. These website terms do not grant a license to redistribute the software or third-party assets. Where software or an asset is separately released under a license, that license governs it."
+          ]
+        },
+        {
+          "id": "third-parties",
+          "title": "Third-party technology.",
+          "layout": "prose",
+          "items": [],
+          "paragraphs": [
+            "Hermes Agent, model software, cloud platforms, and integration names remain subject to their own licenses and terms. Mentioning them does not imply that their providers endorse PraxisForge AI. A link to another service does not extend this preview’s terms to that service."
+          ]
+        },
+        {
+          "id": "availability",
+          "title": "Availability and changes.",
+          "layout": "prose",
+          "items": [],
+          "paragraphs": [
+            "The preview may be changed, paused, restricted, or withdrawn while it is developed. It has no guaranteed uptime, support response time, recovery objective, or preservation period. Keep your own copies of anything you need. Planned features and deployment options describe direction rather than a commitment to deliver on a particular date.",
+            "If access must be limited to address misuse or security risk, the operator may do so. Privacy requests and rights that apply by law remain available."
+          ]
+        },
+        {
+          "id": "limitations",
+          "title": "Expectations and mandatory rights.",
+          "layout": "prose",
+          "items": [],
+          "paragraphs": [
+            "The demonstration is provided for evaluation in its current state. No promise is made that its outputs are error-free, suitable for a particular business purpose, or sufficient for compliance. These terms do not exclude liability or remedies that cannot lawfully be excluded, and they do not remove mandatory consumer or data-protection rights.",
+            "A future commercial agreement must identify the parties, scope, fees, operating responsibilities, governing law, and dispute arrangements. No exclusive court, arbitration requirement, or governing jurisdiction is imposed through this preview notice."
+          ]
+        },
+        {
+          "id": "contact",
+          "title": "Questions and revisions.",
+          "layout": "prose",
+          "items": [],
+          "paragraphs": [
+            "Questions about permitted use can be sent to muhammadzahidulislam2222@gmail.com. Revisions will be dated on this page. A materially different service, data use, or commercial arrangement needs clear notice and, where required, a separate agreement or choice."
+          ]
+        }
+      ],
+      "cta": {
+        "eyebrow": "A direct conversation",
+        "title": "Discuss the use case first.",
+        "text": "If you want to evaluate this for a real team, start with scope, data boundaries, and what success would mean.",
+        "primary": {
+          "label": "Contact the operator",
+          "route": "contact"
+        },
+        "secondary": {
+          "label": "Explore the preview",
+          "route": "workspace"
+        }
+      },
+      "updated": "2026-10-15",
+      "sources": [
+        {
+          "label": "FTC: advertising and marketing",
+          "url": "https://www.ftc.gov/business-guidance/advertising-marketing"
+        }
+      ]
+    },
+    "cookies": {
+      "eyebrow": "Cookies & storage",
+      "title": "Small files.",
+      "accent": "Specific purposes.",
+      "intro": "How the preview uses browser storage and how to control it.",
+      "notice": {
+        "label": "Updated 15 October 2026",
+        "text": "This notice explains current behavior. It is not a request for consent to optional tracking, and continuing to browse is not treated as that consent."
+      },
+      "sections": [
+        {
+          "id": "inventory",
+          "title": "The application cookie inventory.",
+          "layout": "rows",
+          "items": [
+            {
+              "title": "__Host-praxis-session",
+              "body": "Created after a successful authorized login. Links the browser to a server-side authenticated session. Maximum age: eight hours. Secure, HttpOnly, SameSite=Strict, with the root path."
+            },
+            {
+              "title": "__Host-praxis-csrf",
+              "body": "Created with authorized login to support request-integrity checks for state-changing operations. Maximum age: eight hours. Secure, HttpOnly, SameSite=Strict, with the root path."
+            }
+          ]
+        },
+        {
+          "id": "necessary",
+          "title": "Authentication and security.",
+          "layout": "prose",
+          "items": [],
+          "paragraphs": [
+            "These application cookies support the restricted operations area. They are not advertising identifiers. Secure limits transmission to HTTPS; HttpOnly prevents access through ordinary page JavaScript; SameSite=Strict restricts cross-site delivery. Logging out removes the application cookies and invalidates the server-side session."
+          ]
+        },
+        {
+          "id": "edge",
+          "title": "Cloudflare and the website edge.",
+          "layout": "prose",
+          "items": [],
+          "paragraphs": [
+            "Cloudflare sits between the browser and the host for delivery and security. Depending on the security features and challenges encountered, it may set its own cookies, such as a challenge-clearance cookie. Those cookies and their lifetimes are controlled by the enabled provider features rather than the application login settings. Cloudflare also receives request and connection metadata.",
+            "The application code does not implement advertising cookies or an optional analytics library. Edge-managed measurement is a separate configuration concern. Nonessential tracking must not be treated as necessary simply because it is supplied by an infrastructure provider; any future optional tracking needs appropriate information and consent where required."
+          ]
+        },
+        {
+          "id": "demo-storage",
+          "title": "Public demo and local storage.",
+          "layout": "prose",
+          "items": [],
+          "paragraphs": [
+            "The public workspace uses illustrative records in page memory. The application does not persist those demo edits in localStorage or sessionStorage. The current view may be reflected in the URL. Browser caches and ordinary network requests still exist; an in-memory demo does not mean the browser or infrastructure handles no information."
+          ]
+        },
+        {
+          "id": "choices",
+          "title": "Your choices.",
+          "layout": "prose",
+          "items": [],
+          "paragraphs": [
+            "You can inspect, remove, or block cookies through your browser settings. Blocking authentication cookies prevents the restricted operations login from working. Blocking security cookies can trigger repeated challenges or prevent access. Removing a browser cookie does not erase server-side records.",
+            "There is no optional-cookie preference panel in this preview. Do not interpret that as consent to advertising or analytics. Contact the operator if you see an unexpected cookie or want a current explanation of the website’s storage behavior."
+          ]
+        }
+      ],
+      "cta": {
+        "eyebrow": "A direct conversation",
+        "title": "Found something unexpected?",
+        "text": "Send the cookie name and page where it appeared. Do not include the cookie value.",
+        "primary": {
+          "label": "Contact the operator",
+          "route": "contact"
+        },
+        "secondary": {
+          "label": "Explore the preview",
+          "route": "workspace"
+        }
+      },
+      "updated": "2026-10-15",
+      "sources": [
+        {
+          "label": "EU ePrivacy Directive",
+          "url": "https://eur-lex.europa.eu/eli/dir/2002/58/2009-12-19/eng"
+        },
+        {
+          "label": "Cloudflare cookie documentation",
+          "url": "https://developers.cloudflare.com/fundamentals/reference/policies-compliances/cloudflare-cookies/"
+        }
+      ]
+    },
+    "accessibility": {
+      "eyebrow": "Accessibility",
+      "title": "Built to be explored.",
+      "accent": "By more people.",
+      "intro": "Our approach to access, motion, keyboard interaction, and continued evaluation.",
+      "notice": {
+        "label": "Updated 15 October 2026 · Work in progress",
+        "text": "WCAG 2.2 Level AA is the design target. This is not a declaration of full conformance or a certification under US or EU accessibility law."
+      },
+      "sections": [
+        {
+          "id": "approach",
+          "title": "Considered at the interface level.",
+          "layout": "cards",
+          "items": [
+            {
+              "title": "Keyboard access",
+              "body": "Navigation and controls use semantic elements, visible focus states, and a skip link to the main content. Interactive dialogs are designed to be usable without a pointer."
+            },
+            {
+              "title": "Motion preferences",
+              "body": "The interface responds to the operating system’s reduced-motion preference. Smooth scrolling and animation are enhancements; essential information should remain available without them."
+            },
+            {
+              "title": "Readable structure",
+              "body": "Pages use meaningful headings, explicit control names, responsive layouts, and text alternatives where appropriate. Visual presentation should support the content rather than replace it."
+            }
+          ]
+        },
+        {
+          "id": "evaluation",
+          "title": "How access is evaluated.",
+          "layout": "prose",
+          "items": [],
+          "paragraphs": [
+            "Development checks include automated accessibility scans, keyboard interaction, responsive viewport inspection, and reduced-motion behavior. Automated checks find only some barriers. They do not establish that every page, assistive technology, zoom level, or interaction is accessible.",
+            "The current multi-page expansion requires its own checks. No independent accessibility certification or complete assistive-technology audit has been completed. Evaluation results must be tied to the version and screens actually tested."
+          ]
+        },
+        {
+          "id": "limitations",
+          "title": "Known limits.",
+          "layout": "prose",
+          "items": [],
+          "paragraphs": [
+            "Complex task dialogs, dense operational information, animated visual effects, and third-party security challenges need continued manual assessment. A blocked security challenge or an inaccessible provider interface can prevent access even when the application page is usable. Please report the exact step where access becomes difficult."
+          ]
+        },
+        {
+          "id": "feedback",
+          "title": "Report an access barrier.",
+          "layout": "prose",
+          "items": [],
+          "paragraphs": [
+            "Email muhammadzahidulislam2222@gmail.com with the page, action you were trying to complete, and a description of the barrier. If useful, include your browser and assistive technology; do not send sensitive records or credentials. You may ask for the information in a simpler text format.",
+            "The operator will review the report and discuss a practical alternative where possible. There is no published response-time guarantee, but accessibility feedback is used to prioritize corrections."
+          ]
+        },
+        {
+          "id": "law",
+          "title": "Standards and applicable requirements.",
+          "layout": "prose",
+          "items": [],
+          "paragraphs": [
+            "WCAG is a technical reference for improving accessibility. Legal duties depend on the service, operator, jurisdiction, and circumstances. This statement does not claim blanket ADA or European Accessibility Act compliance, and it does not limit any rights you have under applicable law."
+          ]
+        }
+      ],
+      "cta": {
+        "eyebrow": "A direct conversation",
+        "title": "Help make the next version better.",
+        "text": "A precise description of the barrier is more useful than a score. Tell us where the experience stopped working for you.",
+        "primary": {
+          "label": "Contact the operator",
+          "route": "contact"
+        },
+        "secondary": {
+          "label": "Explore the preview",
+          "route": "workspace"
+        }
+      },
+      "updated": "2026-10-15",
+      "sources": [
+        {
+          "label": "W3C: accessibility statements",
+          "url": "https://www.w3.org/WAI/planning/statements/"
+        },
+        {
+          "label": "WCAG 2.2",
+          "url": "https://www.w3.org/TR/WCAG22/"
+        },
+        {
+          "label": "US DOJ: web accessibility guidance",
+          "url": "https://www.ada.gov/resources/web-guidance/"
+        },
+        {
+          "label": "EU business accessibility guidance",
+          "url": "https://europa.eu/youreurope/business/selling-in-eu/selling-goods-services/accessibility/index_en.htm"
+        }
+      ]
+    }
+  },
+  "common": {
+    "previewLabel": "Product preview",
+    "availableLabel": "Available to explore",
+    "plannedLabel": "Planned capability",
+    "limitedLabel": "Bounded implementation",
+    "sectionLabel": "On this page",
+    "backToTop": "Back to top",
+    "contactEmail": "muhammadzahidulislam2222@gmail.com",
+    "contactEyebrow": "A direct conversation",
+    "contactTitle": "Bring a clear brief.",
+    "contactText": "For product questions or a scoped deployment discussion, email a short description of the workflow. Keep passwords, private client records and sensitive attachments out of the first message.",
+    "contactLinkLabel": "Email PraxisForge",
+    "breadcrumbHome": "Home",
+    "readMore": "Explore further",
+    "updatedLabel": "Last updated",
+    "sourcesLabel": "Reference sources"
+  }
+}

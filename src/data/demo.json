@@ -1,0 +1,151 @@
+{
+  "tasks": [
+    {
+      "id": "PF-1042",
+      "title": "A thoughtful follow-up for Northstar",
+      "client": "Northstar Studio",
+      "type": "Client follow-up",
+      "agent": "Operator",
+      "status": "approval",
+      "time": "12 min ago",
+      "description": "Turn the discovery call commitments into a clear, source-backed next step for Morgan.",
+      "recipient": "morgan@northstar.example",
+      "account": "clients@atelier.example",
+      "subject": "Northstar — our next steps",
+      "body": "Hi Morgan,\n\nThank you for the thoughtful conversation. Based on our discovery session, we’ll share the revised direction on Friday and collect your team’s feedback before the next workshop.\n\nI’ve brought the three open commitments together so we can keep the next steps clear. Please let me know if your priorities have shifted.\n\nBest,\nThe Atelier team",
+      "sources": [
+        "Discovery call · 14 October",
+        "Client playbook · Follow-ups",
+        "Northstar · Project commitments"
+      ],
+      "events": [
+        "Request received and assigned",
+        "Three permitted sources reviewed",
+        "Follow-up drafted by Operator",
+        "Exact action prepared for your review"
+      ]
+    },
+    {
+      "id": "PF-1041",
+      "title": "The weekly commitments brief",
+      "client": "Atelier Studio",
+      "type": "Weekly planning",
+      "agent": "Orchestrator",
+      "status": "completed",
+      "time": "38 min ago",
+      "description": "An illustrative weekly summary, with each commitment linked to its source and owner.",
+      "recipient": "team@atelier.example",
+      "account": "operations@atelier.example",
+      "subject": "Our week, with a little more clarity",
+      "body": "The weekly brief is ready. Three illustrative commitments are grouped by client, owner, and next step. All items are synthetic.",
+      "sources": ["Weekly meeting · 13 October", "Agency commitments board"],
+      "events": [
+        "Meeting evidence reviewed",
+        "Commitments matched to owners",
+        "Brief prepared and checked",
+        "Simulated completion evidence recorded"
+      ]
+    },
+    {
+      "id": "PF-1040",
+      "title": "Prepare the Meridian workshop",
+      "client": "Meridian Partners",
+      "type": "Meeting preparation",
+      "agent": "Researcher",
+      "status": "blocked",
+      "time": "1 hr ago",
+      "description": "The workshop brief needs a source that is not available to this illustrative workspace. The agent pauses rather than inventing the missing context.",
+      "recipient": "workshops@meridian.example",
+      "account": "clients@atelier.example",
+      "subject": "Meridian workshop preparation",
+      "body": "Blocked: the latest workshop scope is missing. Provide an authorized source before this task continues.",
+      "sources": ["Meridian · Previous workshop notes"],
+      "events": [
+        "Request decomposed",
+        "Available sources checked",
+        "Required workshop scope not found",
+        "Task blocked with a clear next step"
+      ]
+    },
+    {
+      "id": "PF-1039",
+      "title": "Reconcile the Cedar CRM update",
+      "client": "Cedar & Co.",
+      "type": "CRM reconciliation",
+      "agent": "Orchestrator",
+      "status": "unknown",
+      "time": "2 hrs ago",
+      "description": "An illustrative provider timeout happened after a possible submission. Reconciliation is needed before any retry.",
+      "recipient": "cedar@client.example",
+      "account": "operations@atelier.example",
+      "subject": "Cedar commitment status",
+      "body": "Outcome unknown. The system must inspect the external record before deciding whether to retry. No external call took place in this frontend demo.",
+      "sources": ["Cedar · Client commitments", "Simulated connector response"],
+      "events": [
+        "Exact update approved in fixture",
+        "Simulated submission attempted",
+        "Simulated response timed out",
+        "Retry paused pending reconciliation"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "meeting",
+      "name": "Discovery call · 14 October",
+      "kind": "Meeting notes",
+      "client": "Northstar Studio",
+      "version": "Version 1",
+      "excerpt": "Morgan asked for a revised creative direction by Friday. The team will review feedback before the next workshop. Three commitments remain open.",
+      "updated": "Yesterday"
+    },
+    {
+      "id": "playbook",
+      "name": "Client playbook · Follow-ups",
+      "kind": "Team knowledge",
+      "client": "Atelier Studio",
+      "version": "Version 3",
+      "excerpt": "Keep client follow-ups clear and considerate. Name the agreed next step, its owner, and its date. Ask for clarification when evidence is missing.",
+      "updated": "2 days ago"
+    },
+    {
+      "id": "board",
+      "name": "Northstar · Project commitments",
+      "kind": "Project record",
+      "client": "Northstar Studio",
+      "version": "Version 2",
+      "excerpt": "Share the revised direction. Collect client feedback. Prepare the next workshop agenda. These records are synthetic examples.",
+      "updated": "Yesterday"
+    }
+  ],
+  "connections": [
+    {
+      "name": "Gmail",
+      "initial": "G",
+      "description": "Account-specific drafts, reviewed sends, and message receipts.",
+      "scope": "Draft · Review · Send",
+      "state": "Planned connector"
+    },
+    {
+      "name": "Google Drive",
+      "initial": "D",
+      "description": "Permission-aware source discovery and document context.",
+      "scope": "Discover · Read · Cite",
+      "state": "Planned connector"
+    },
+    {
+      "name": "Telegram",
+      "initial": "T",
+      "description": "Authenticated requests and useful progress updates.",
+      "scope": "Pair · Request · Notify",
+      "state": "Planned connector"
+    },
+    {
+      "name": "Twenty CRM",
+      "initial": "20",
+      "description": "Reviewed client record updates and reconciliation.",
+      "scope": "Read · Propose · Verify",
+      "state": "Planned connector"
+    }
+  ]
+}

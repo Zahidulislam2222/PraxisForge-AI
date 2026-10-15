@@ -1,0 +1,4 @@
+# The repository root is not an application build context.
+# Use scripts/prepare-core-build.py and its explicit allowlist instead.
+**
+!.dockerignore

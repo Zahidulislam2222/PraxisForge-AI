@@ -1,0 +1,1 @@
+{"package":"PyJWT[crypto]","from":"2.13.0","to":"2.15.1","reason":"Pinned upstream release has known advisories; candidate2.15.1 passed the vulnerability audit."}

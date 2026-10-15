@@ -1,0 +1,44 @@
+worker_processes auto;
+pid __TEMP_PATH__/nginx.pid;
+error_log /dev/stderr warn;
+events { worker_connections 256; }
+http {
+  include /etc/nginx/mime.types;
+  default_type application/octet-stream;
+  access_log /dev/stdout;
+  server_tokens off;
+  sendfile on;
+  gzip on;
+  gzip_vary on;
+  gzip_types text/css application/javascript application/json image/svg+xml;
+  client_body_temp_path __TEMP_PATH__/client_temp;
+  proxy_temp_path __TEMP_PATH__/proxy_temp;
+  fastcgi_temp_path __TEMP_PATH__/fastcgi_temp;
+  uwsgi_temp_path __TEMP_PATH__/uwsgi_temp;
+  scgi_temp_path __TEMP_PATH__/scgi_temp;
+  # Shared edge budget bounds password hashing even when callers rotate email addresses.
+  map $uri $login_budget_key {
+    default "";
+    __API_PREFIX__/login "login";
+  }
+  limit_req_zone $login_budget_key zone=login_budget:1m rate=__EDGE_LOGIN_PER_MINUTE__r/m;
+  limit_req_status 429;
+  server {
+    listen __CONTAINER_PORT__;
+    root /usr/share/nginx/html;
+    index index.html;
+    include /etc/nginx/headers.conf;
+    client_max_body_size __MAX_HTTP_BODY_BYTES__;
+    location __API_PREFIX__/ {
+      limit_req zone=login_budget burst=__EDGE_LOGIN_BURST__ nodelay;
+      proxy_pass http://__API_HOST__:__API_PORT__;
+      proxy_set_header Host $host;
+      proxy_set_header X-Real-IP $remote_addr;
+      proxy_read_timeout __HTTP_TIMEOUT_SECONDS__s;
+      proxy_send_timeout __HTTP_TIMEOUT_SECONDS__s;
+    }
+    location / { try_files $uri $uri/ $uri.html =404; }
+    location ~ /\. { deny all; }
+    error_page 404 /404.html;
+  }
+}

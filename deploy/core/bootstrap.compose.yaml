@@ -1,0 +1,5 @@
+# Use only for the initial public model-weight download, before starting workers.
+# Reapply the base file alone afterwards; the model service then has no egress network.
+services:
+  model:
+    networks: [private, edge]

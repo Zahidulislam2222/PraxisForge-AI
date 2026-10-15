@@ -1,0 +1,81 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  frontend:
+    # Standard public runners are free. Private-repository billing is not authorized.
+    if: github.event.repository.private == false
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      NEXT_TELEMETRY_DISABLED: "1"
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: "24"
+          package-manager-cache: false
+      - run: npm ci --no-audit --no-fund
+      - run: npm test
+      - run: npm run typecheck
+      - run: npm run lint
+      - run: npm run build
+
+  backend:
+    if: github.event.repository.private == false
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      PYTHONPATH: backend
+      CI_DB_USER: test_ci_user
+      CI_DB_PASSWORD: test-ci-database-password
+      CI_DB_NAME: praxis_qa
+      CI_DB_HOST: 127.0.0.1
+      CI_DB_PORT: "5432"
+      CI_MODEL_ID: test-model-never-invoked
+      PIP_DISABLE_PIP_VERSION_CHECK: "1"
+    services:
+      postgres:
+        image: postgres@sha256:5a5a84b19854a9ffaa54082c166ff4ec27473a361e496e5ea167f298f2da9722
+        env:
+          POSTGRES_USER: ${{ env.CI_DB_USER }}
+          POSTGRES_PASSWORD: ${{ env.CI_DB_PASSWORD }}
+          POSTGRES_DB: ${{ env.CI_DB_NAME }}
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U test_ci_user -d praxis_qa"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.14"
+      - run: python -m pip install --requirement backend/requirements.lock --requirement backend/requirements-dev.txt
+      - name: Install only the public example in the disposable checkout
+        run: cp backend/.env.public.example backend/.env.example
+      - run: python .github/scripts/export-test-environment.py
+      - run: python -m pytest -q backend/tests
+      - run: python -m ruff check praxis tests patches ../scripts/prepare-core-build.py ../.github/scripts
+        working-directory: backend
+      - run: python -m mypy --config-file backend/pyproject.toml backend/praxis
+      - run: python scripts/prepare-core-build.py
+      # Source preparation verifies pinned upstream bytes; no image build/push,
+      # model inference, deployment, retained artifacts or cache are performed.

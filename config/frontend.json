@@ -1,0 +1,58 @@
+{
+  "siteUrl": "https://praxisforge.zahidul-islam.com",
+  "routes": {
+    "home": "/",
+    "workspace": "/workspace/",
+    "principles": "/principles/",
+    "operations": "/operations/",
+    "product": "/product/",
+    "features": "/features/",
+    "use-cases": "/use-cases/",
+    "pricing": "/pricing/",
+    "about": "/about/",
+    "security": "/security/",
+    "contact": "/contact/",
+    "docs": "/docs/",
+    "resources": "/resources/",
+    "changelog": "/changelog/",
+    "status": "/status/",
+    "legal": "/legal/",
+    "accessibility": "/accessibility/",
+    "privacy": "/legal/privacy/",
+    "terms": "/legal/terms/",
+    "cookies": "/legal/cookies/"
+  },
+  "media": {
+    "hero": "/media/forge-1600.webp",
+    "heroSmall": "/media/forge-960.webp"
+  },
+  "motion": {
+    "revealSeconds": 0.75,
+    "microSeconds": 0.25,
+    "scrollLerp": 0.085,
+    "revealDistance": 24,
+    "heroParallax": 100
+  },
+  "preview": {
+    "port": 4318,
+    "host": "0.0.0.0"
+  },
+  "demo": {
+    "workspace": "Atelier Studio",
+    "workspaceTag": "AS",
+    "label": "Interactive demo",
+    "disclaimer": "Synthetic workspace. Actions are simulated; no messages are sent.",
+    "date": "Thursday, 15 October",
+    "defaultTask": "PF-1042"
+  },
+  "external": {
+    "hermes": "https://github.com/NousResearch/hermes-agent"
+  },
+  "core": {
+    "apiPrefix": "/api",
+    "pollMilliseconds": 5000
+  },
+  "seo": {
+    "noIndexRoutes": ["operations", "workspace"]
+  }
+}

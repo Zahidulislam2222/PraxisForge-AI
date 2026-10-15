@@ -1,0 +1,16 @@
+{
+  "archiveBaseUrl": "https://codeload.github.com/NousResearch/hermes-agent/tar.gz/",
+  "downloadTimeoutSeconds": 60,
+  "maxArchiveBytes": 134217728,
+  "maxExpandedBytes": 536870912,
+  "maxArchiveMembers": 40000,
+  "outputDirectory": "build/core",
+  "sourceDirectories": ["praxis", "data", "patches", "tests"],
+  "sourceFiles": [
+    "Dockerfile",
+    "requirements.lock",
+    ".env.public.example",
+    ".dockerignore"
+  ],
+  "sourceSuffixes": [".py", ".sql", ".json"]
+}
